@@ -16,7 +16,19 @@ type TranslationKey =
   | 'directoryContacts'
   | 'languageEn'
   | 'languageTi'
-  | 'languageAm';
+  | 'languageAm'
+  | 'bookmarked'
+  | 'company'
+  | 'title'
+  | 'tags'
+  | 'postedBy'
+  | 'newestFirst'
+  | 'oldestFirst'
+  | 'noOpportunitiesFound'
+  | 'toggleBookmark'
+  | 'filterByTags'
+  | 'filterByCompany'
+  | 'sortByDate';
 
 const translations = {
   en: {
@@ -36,7 +48,6 @@ const translations = {
     languageEn: 'English',
     languageTi: 'Tigrinya',
     languageAm: 'Amharic',
-    // Opportunities Page
     bookmarked: 'Bookmarked',
     company: 'Company',
     title: 'Title',
@@ -67,7 +78,6 @@ const translations = {
     languageEn: 'እንግሊዝኛ',
     languageTi: 'ትግርኛ',
     languageAm: 'አማርኛ',
-    // Opportunities Page
     bookmarked: 'ተመዝጊቡ',
     company: 'ኩባንያ',
     title: 'ኣርእስቲ',
@@ -98,7 +108,6 @@ const translations = {
     languageEn: 'እንግሊዘኛ',
     languageTi: 'ትግርኛ',
     languageAm: 'አማርኛ',
-    // Opportunities Page
     bookmarked: 'ምልክት ተደርጎበታል',
     company: 'ኩባንያ',
     title: 'ርዕስ',
