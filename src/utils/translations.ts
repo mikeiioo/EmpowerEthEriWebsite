@@ -1,4 +1,3 @@
-
 type Language = 'en' | 'ti' | 'am';
 
 type TranslationKey = 
@@ -19,7 +18,7 @@ type TranslationKey =
   | 'languageTi'
   | 'languageAm';
 
-const translations: Record<Language, Record<TranslationKey, string>> = {
+const translations = {
   en: {
     navHome: 'Home',
     navAbout: 'About',
@@ -36,7 +35,20 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     directoryContacts: 'Contacts',
     languageEn: 'English',
     languageTi: 'Tigrinya',
-    languageAm: 'Amharic'
+    languageAm: 'Amharic',
+    // Opportunities Page
+    bookmarked: 'Bookmarked',
+    company: 'Company',
+    title: 'Title',
+    tags: 'Tags',
+    postedBy: 'Posted By',
+    newestFirst: 'Date Posted: Newest',
+    oldestFirst: 'Date Posted: Oldest',
+    noOpportunitiesFound: 'No opportunities found',
+    toggleBookmark: 'Toggle bookmark',
+    filterByTags: 'Filter by tags',
+    filterByCompany: 'Filter by company',
+    sortByDate: 'Sort by date',
   },
   ti: {
     navHome: 'ገዛ',
@@ -54,7 +66,20 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     directoryContacts: 'ርክባት',
     languageEn: 'እንግሊዝኛ',
     languageTi: 'ትግርኛ',
-    languageAm: 'አማርኛ'
+    languageAm: 'አማርኛ',
+    // Opportunities Page
+    bookmarked: 'ተመዝጊቡ',
+    company: 'ኩባንያ',
+    title: 'ኣርእስቲ',
+    tags: 'መለለዪታታት',
+    postedBy: 'ዝለጠፎ',
+    newestFirst: 'ዝተለጠፈሉ: ሓድሽ',
+    oldestFirst: 'ዝተለጠፈሉ: ጥንታዊ',
+    noOpportunitiesFound: 'ዕድላት ኣይተረኸቡን',
+    toggleBookmark: 'ምልክት ቦታ ለውጥ',
+    filterByTags: 'ብመለለዪታት ኣጻሪ',
+    filterByCompany: 'ብኩባንያ ኣጻሪ',
+    sortByDate: 'ብዕለት ጎስጕስ',
   },
   am: {
     navHome: 'መነሻ',
@@ -72,8 +97,21 @@ const translations: Record<Language, Record<TranslationKey, string>> = {
     directoryContacts: 'ግንኙነቶች',
     languageEn: 'እንግሊዘኛ',
     languageTi: 'ትግርኛ',
-    languageAm: 'አማርኛ'
-  }
+    languageAm: 'አማርኛ',
+    // Opportunities Page
+    bookmarked: 'ምልክት ተደርጎበታል',
+    company: 'ኩባንያ',
+    title: 'ርዕስ',
+    tags: 'መለያዎች',
+    postedBy: 'የለጠፈው',
+    newestFirst: 'የተለጠፈበት ቀን: አዲስ',
+    oldestFirst: 'የተለጠፈበት ቀን: ጥንታዊ',
+    noOpportunitiesFound: 'ምንም እድሎች ��ልተገኙም',
+    toggleBookmark: 'ምልክት ቦታ ቀይር',
+    filterByTags: 'በመለያዎች አጣራ',
+    filterByCompany: 'በኩባንያ አጣራ',
+    sortByDate: 'በቀን ደርድር',
+  },
 };
 
 export { translations };
