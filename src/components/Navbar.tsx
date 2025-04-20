@@ -1,0 +1,125 @@
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import { Menu, X, Globe } from 'lucide-react';
+
+const Navbar = () => {
+  const { t, language, setLanguage } = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
+  const [showLanguages, setShowLanguages] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+    if (showLanguages) setShowLanguages(false);
+  };
+
+  const toggleLanguages = () => {
+    setShowLanguages(!showLanguages);
+  };
+
+  const changeLanguage = (lang: 'en' | 'ti' | 'am') => {
+    setLanguage(lang);
+    setShowLanguages(false);
+  };
+
+  const navLinks = [
+    { name: t('navHome'), path: '/' },
+    { name: t('navAbout'), path: '/about' },
+    { name: t('navDirectory'), path: '/directory' },
+    { name: t('navResources'), path: '/resources' },
+    { name: t('navOpportunities'), path: '/opportunities' },
+    { name: t('navProfile'), path: '/profile' },
+  ];
+
+  return (
+    <nav className="relative bg-etheri-blue text-white shadow-md">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="flex justify-between items-center h-16">
+          <Link to="/" className="flex items-center space-x-2">
+            <span className="text-xl font-bold">EmpowerEtheri</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="hover:text-etheri-yellow transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex items-center">
+            {/* Language Selector */}
+            <div className="relative">
+              <button
+                onClick={toggleLanguages}
+                className="p-2 rounded-full hover:bg-etheri-lightBlue transition-colors flex items-center"
+                aria-label="Change language"
+              >
+                <Globe size={20} />
+              </button>
+
+              {/* Language Dropdown */}
+              {showLanguages && (
+                <div className="absolute right-0 mt-2 w-40 bg-white text-gray-800 rounded-md shadow-lg z-20 overflow-hidden">
+                  <button
+                    onClick={() => changeLanguage('en')}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${language === 'en' ? 'bg-gray-200' : ''}`}
+                  >
+                    {t('languageEn')}
+                  </button>
+                  <button
+                    onClick={() => changeLanguage('ti')}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${language === 'ti' ? 'bg-gray-200' : ''}`}
+                  >
+                    {t('languageTi')}
+                  </button>
+                  <button
+                    onClick={() => changeLanguage('am')}
+                    className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${language === 'am' ? 'bg-gray-200' : ''}`}
+                  >
+                    {t('languageAm')}
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile menu button */}
+            <button
+              onClick={toggleNav}
+              className="ml-4 md:hidden focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="md:hidden bg-etheri-lightBlue">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="block px-3 py-2 rounded-md hover:bg-etheri-blue"
+                onClick={toggleNav}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
