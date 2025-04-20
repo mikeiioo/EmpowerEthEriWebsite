@@ -86,7 +86,33 @@ const schools = [...new Set(mockOpportunities.map(opp => opp.school))];
 const allTags = [...new Set(mockOpportunities.flatMap(opp => opp.tags))];
 
 const Opportunities = () => {
-  const { t } = useLanguage();
+  // Wrap the useLanguage hook in a try-catch block
+  let t;
+  try {
+    const { t: translate } = useLanguage();
+    t = translate;
+  } catch (error) {
+    console.error('Language context error:', error);
+    // Fallback translation function if context is not available
+    t = (key: string) => {
+      const fallbackTranslations: Record<string, string> = {
+        navOpportunities: 'Opportunities',
+        bookmarked: 'Bookmarked',
+        company: 'Company',
+        title: 'Title',
+        tags: 'Tags',
+        postedBy: 'Posted By',
+        newestFirst: 'Date Posted: Newest',
+        oldestFirst: 'Date Posted: Oldest',
+        noOpportunitiesFound: 'No opportunities found',
+        toggleBookmark: 'Toggle bookmark',
+        filterByTags: 'Filter by tags',
+        filterByCompany: 'Filter by company',
+        sortByDate: 'Sort by date'
+      };
+      return fallbackTranslations[key] || key;
+    };
+  }
   
   // State for filters
   const [showBookmarked, setShowBookmarked] = useState(false);
@@ -200,12 +226,12 @@ const Opportunities = () => {
             </ToggleGroup>
           </div>
 
-          <Select onValueChange={(value) => setSelectedSchool(value)}>
+          <Select onValueChange={(value) => setSelectedSchool(value || null)}>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder={t('company')} />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Companies</SelectItem>
+              <SelectItem value="all">All Companies</SelectItem>
               {schools.map(school => (
                 <SelectItem key={school} value={school}>{school}</SelectItem>
               ))}
