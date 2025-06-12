@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ProfileCard from '../components/ProfileCard';
@@ -150,69 +149,71 @@ const Directory = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-16">
-      <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-10 text-center text-etheri-blue">
-          {t('navDirectory')}
-        </h1>
+    <div className="rainbow-gradient">
+      <div className="py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-3xl font-bold mb-10 text-center event-blue">
+            {t('navDirectory')}
+          </h1>
 
-        {/* Tab Switcher */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex p-1 bg-gray-200 rounded-full">
-            <button
-              className={`switch-tab ${activeTab === 'mentors' ? 'active' : 'inactive'}`}
-              onClick={() => setActiveTab('mentors')}
-            >
-              {t('directoryMentors')}
-            </button>
-            <button
-              className={`switch-tab ${activeTab === 'contacts' ? 'active' : 'inactive'}`}
-              onClick={() => setActiveTab('contacts')}
-            >
-              {t('directoryContacts')}
-            </button>
-          </div>
-        </div>
-
-        {/* Directory Content */}
-        <div className="max-w-5xl mx-auto">
-          {activeTab === 'mentors' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-etheri-blue">
+          {/* Tab Switcher */}
+          <div className="flex justify-center mb-10">
+            <div className="inline-flex p-1 bg-white/80 backdrop-blur-sm rounded-full">
+              <button
+                className={`switch-tab ${activeTab === 'mentors' ? 'active' : 'inactive'}`}
+                onClick={() => setActiveTab('mentors')}
+              >
                 {t('directoryMentors')}
-              </h2>
-              <div className="grid grid-cols-1 gap-6">
-                {mentors.map((mentor) => (
-                  <ProfileCard
-                    key={mentor.id}
-                    name={mentor.name}
-                    role={mentor.role}
-                    bio={mentor.bio}
-                    imageUrl={mentor.imageUrl}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-
-          {activeTab === 'contacts' && (
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-etheri-blue">
+              </button>
+              <button
+                className={`switch-tab ${activeTab === 'contacts' ? 'active' : 'inactive'}`}
+                onClick={() => setActiveTab('contacts')}
+              >
                 {t('directoryContacts')}
-              </h2>
-              <div className="grid grid-cols-1 gap-6">
-                {contacts.map((contact) => (
-                  <ProfileCard
-                    key={contact.id}
-                    name={contact.name}
-                    role={contact.role}
-                    bio={contact.bio}
-                    imageUrl={contact.imageUrl}
-                  />
-                ))}
-              </div>
+              </button>
             </div>
-          )}
+          </div>
+
+          {/* Directory Content */}
+          <div className="max-w-5xl mx-auto">
+            {activeTab === 'mentors' && (
+              <div>
+                <h2 className="text-2xl font-bold mb-6 event-blue">
+                  {t('directoryMentors')}
+                </h2>
+                <div className="grid grid-cols-1 gap-6">
+                  {mentors.map((mentor) => (
+                    <ProfileCard
+                      key={mentor.id}
+                      name={mentor.name}
+                      role={mentor.role}
+                      bio={mentor.bio}
+                      imageUrl={mentor.imageUrl}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'contacts' && (
+              <div>
+                <h2 className="text-2xl font-bold mb-6 event-blue">
+                  {t('directoryContacts')}
+                </h2>
+                <div className="grid grid-cols-1 gap-6">
+                  {contacts.map((contact) => (
+                    <ProfileCard
+                      key={contact.id}
+                      name={contact.name}
+                      role={contact.role}
+                      bio={contact.bio}
+                      imageUrl={contact.imageUrl}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

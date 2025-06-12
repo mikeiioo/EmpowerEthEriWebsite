@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
@@ -97,12 +96,32 @@
   }
 }
 
+/* Rainbow gradient background */
+.rainbow-gradient {
+  background: linear-gradient(135deg, 
+    rgba(255, 182, 193, 0.3) 0%,   /* Light pink */
+    rgba(255, 218, 185, 0.3) 16%,  /* Peach */
+    rgba(255, 255, 186, 0.3) 32%,  /* Light yellow */
+    rgba(186, 255, 201, 0.3) 48%,  /* Light green */
+    rgba(186, 225, 255, 0.3) 64%,  /* Light blue */
+    rgba(221, 186, 255, 0.3) 80%,  /* Light purple */
+    rgba(255, 182, 193, 0.3) 100%  /* Back to light pink */
+  );
+  min-height: 100vh;
+}
+
+/* Blue gradient for headers */
 .gradient-blue {
   @apply bg-gradient-to-r from-etheri-blue to-etheri-lightBlue text-white;
 }
 
+/* Event-style blue text */
+.event-blue {
+  color: #2c5aa0;
+}
+
 .profile-card {
-  @apply flex flex-col md:flex-row gap-6 p-6 rounded-lg border bg-card shadow-sm transition-all hover:shadow-md;
+  @apply flex flex-col md:flex-row gap-6 p-6 rounded-lg border bg-white/80 backdrop-blur-sm shadow-sm transition-all hover:shadow-md;
 }
 
 .profile-image {
@@ -118,5 +137,10 @@
 }
 
 .switch-tab.inactive {
-  @apply bg-gray-100 text-gray-600 hover:bg-gray-200;
+  @apply bg-white/80 text-gray-600 hover:bg-white/90;
+}
+
+/* Card styling for rainbow background */
+.rainbow-card {
+  @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-lg;
 }
