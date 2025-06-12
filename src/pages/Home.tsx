@@ -1,9 +1,29 @@
 
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import ImageCarousel from '../components/ImageCarousel';
 
 const Home = () => {
   const { t } = useLanguage();
+
+  // Sample images for the carousel - you can replace these with your own images
+  const carouselImages = [
+    {
+      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop",
+      alt: "Young person mentoring",
+      caption: "Empowering the next generation through mentorship"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
+      alt: "Learning together",
+      caption: "Building skills for tomorrow's challenges"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+      alt: "Digital literacy",
+      caption: "Bridging the digital divide in our community"
+    }
+  ];
 
   return (
     <div className="flex flex-col">
@@ -19,6 +39,16 @@ const Home = () => {
               alt="EmpowerEtheri Logo" 
               className="w-64 h-64 md:w-80 md:h-80 mx-auto"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center text-etheri-blue">Our Impact</h2>
+            <ImageCarousel images={carouselImages} />
           </div>
         </div>
       </section>
