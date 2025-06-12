@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -28,8 +27,6 @@ const Navbar = () => {
     { name: t('navAbout'), path: '/about' },
     { name: t('navDirectory'), path: '/directory' },
     { name: t('navResources'), path: '/resources' },
-    { name: t('navOpportunities'), path: '/opportunities' },
-    { name: t('navProfile'), path: '/profile' },
   ];
 
   return (

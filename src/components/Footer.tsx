@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -45,11 +44,6 @@ const Footer = () => {
               <li>
                 <Link to="/resources" className="text-sm hover:text-etheri-yellow transition-colors">
                   {t('navResources')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/opportunities" className="text-sm hover:text-etheri-yellow transition-colors">
-                  {t('navOpportunities')}
                 </Link>
               </li>
             </ul>

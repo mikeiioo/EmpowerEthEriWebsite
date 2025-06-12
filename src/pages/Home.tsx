@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -110,7 +109,7 @@ const Home = () => {
               Find a Mentor
             </a>
             <a 
-              href="/profile" 
+              href="/directory" 
               className="px-6 py-3 bg-etheri-yellow text-gray-800 font-medium rounded-md hover:bg-opacity-90 transition-all"
             >
               Become a Mentor
