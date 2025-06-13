@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -35,24 +36,9 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-left mb-12">
-              <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
                 About
               </h1>
-            </div>
-          </div>
-        </section>
-
-        {/* About Text Block */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <div className="rainbow-card rounded-lg p-8">
-                <div className="prose prose-lg mx-auto">
-                  <p className="mb-4 text-gray-700">
-                    [Add your paragraph text here - this section is ready for your content]
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
