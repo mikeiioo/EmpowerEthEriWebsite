@@ -239,12 +239,17 @@ const Directory = () => {
         <div className="container mx-auto px-4">
           {/* Updated Header Section with rainbow star graphic */}
           <div className="text-center mb-12 relative">
-            {/* Rainbow star graphic positioned to the left of the heading */}
+            {/* Rainbow star graphic stretched from left edge */}
             <img 
               src="/lovable-uploads/da935b25-d018-4f14-b09e-ccad4fc8b69f.png" 
               alt="Rainbow star" 
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 w-24 h-24 md:w-32 md:h-32 opacity-80 z-0"
-              style={{ left: 'clamp(10px, 5vw, 100px)' }}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 w-48 h-32 md:w-64 md:h-40 opacity-80 z-0 object-cover"
+              style={{ 
+                left: '-2rem',
+                width: 'clamp(200px, 35vw, 400px)',
+                height: 'clamp(120px, 20vw, 240px)',
+                objectPosition: 'left center'
+              }}
             />
             <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue relative z-10">
               {t('navDirectory')}
