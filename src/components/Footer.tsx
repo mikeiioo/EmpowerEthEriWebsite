@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -51,6 +53,16 @@ const Footer = () => {
                   {t('navResources')}
                 </Link>
               </li>
+              <li>
+                <Link to="/important-links" className="text-sm hover:text-etheri-yellow transition-colors">
+                  Important Links
+                </Link>
+              </li>
+              <li>
+                <Link to="/scholarship-newsletter" className="text-sm hover:text-etheri-yellow transition-colors">
+                  Scholarship Newsletter
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -58,15 +70,14 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Connect</h4>
             <p className="text-sm mb-2">info@empoweretheri.org</p>
             <div className="flex space-x-4 mt-4">
-              {/* Social media icons would go here */}
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
-                <span className="sr-only">Facebook</span>
+              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+                <Facebook size={16} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
-                <span className="sr-only">Twitter</span>
+              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+                <Instagram size={16} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
-                <span className="sr-only">Instagram</span>
+              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+                <Linkedin size={16} />
               </div>
             </div>
           </div>
