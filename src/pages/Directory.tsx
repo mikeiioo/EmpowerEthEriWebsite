@@ -235,7 +235,7 @@ const Directory = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka">
               {t('navDirectory')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 font-medium">
+            <p className="text-lg md:text-xl text-etheri-yellow font-medium font-fredoka">
               Meet the mentors behind EmpowerEthEri and stay connected!
             </p>
           </div>
