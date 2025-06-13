@@ -280,6 +280,7 @@ const Directory = () => {
                       role={mentor.role}
                       bio={mentor.bio}
                       imageUrl={mentor.imageUrl}
+                      showSocialIcons={true}
                     />
                   ))}
                 </div>
@@ -299,6 +300,7 @@ const Directory = () => {
                       role={contact.role}
                       bio={contact.bio}
                       imageUrl={contact.imageUrl}
+                      showSocialIcons={false}
                     />
                   ))}
                 </div>
