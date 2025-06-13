@@ -236,9 +236,15 @@ const Directory = () => {
     <div className="rainbow-gradient">
       <div className="py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-10 text-center event-blue">
-            {t('navDirectory')}
-          </h1>
+          {/* Updated Header Section */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 event-blue">
+              {t('navDirectory')}
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-700 font-medium">
+              Meet the mentors behind EmpowerEthEri and stay connected!
+            </p>
+          </div>
 
           {/* Tab Switcher */}
           <div className="flex justify-center mb-10">
