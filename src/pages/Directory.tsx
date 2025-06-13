@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ProfileCard from '../components/ProfileCard';
@@ -231,7 +232,7 @@ const Directory = () => {
         <div className="container mx-auto px-4">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-knicknack">
               {t('navDirectory')}
             </h1>
             <p className="text-lg md:text-xl text-gray-700 font-medium">
