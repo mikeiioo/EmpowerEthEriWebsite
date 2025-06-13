@@ -37,26 +37,26 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
-              alt="EmpowerEtheri Logo" 
+              alt="EmpowerEthEri Logo" 
               className="w-11 h-11 rounded-full object-cover bg-transparent"
             />
-            <span className="text-xl font-bold">EmpowerEtheri</span>
+            <span className="text-xl font-bold">EmpowerEthEri</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="hover:text-etheri-yellow transition-colors"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+          <div className="flex items-center space-x-6">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex space-x-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className="hover:text-etheri-yellow transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
 
-          <div className="flex items-center">
             {/* Language Selector */}
             <div className="relative">
               <button
@@ -95,7 +95,7 @@ const Navbar = () => {
             {/* Mobile menu button */}
             <button
               onClick={toggleNav}
-              className="ml-4 md:hidden focus:outline-none"
+              className="md:hidden focus:outline-none"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
