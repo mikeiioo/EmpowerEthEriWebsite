@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -8,8 +7,8 @@ const About = () => {
 
   const faqItems = [
     {
-      question: "What is EmpowerEtheri?",
-      answer: "EmpowerEtheri is a mentorship program connecting Eritrean and Ethiopian youth with established professionals for guidance, support, and community building."
+      question: "What is EmpowerEthEri?",
+      answer: "EmpowerEthEri is a mentorship program connecting Eritrean and Ethiopian youth with established professionals for guidance, support, and community building."
     },
     {
       question: "Who can join as a mentee?",
@@ -68,7 +67,7 @@ const About = () => {
                 </h2>
                 <div className="prose prose-lg mx-auto">
                   <p className="mb-4 text-gray-700">
-                    EmpowerEtheri exists to bridge the gap between generations, connecting young Eritrean and 
+                    EmpowerEthEri exists to bridge the gap between generations, connecting young Eritrean and 
                     Ethiopian individuals with mentors who can guide them through the complexities of education, 
                     career development, and cultural identity in the diaspora.
                   </p>
