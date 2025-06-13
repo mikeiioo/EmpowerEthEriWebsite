@@ -50,7 +50,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="font-noto font-bold text-base hover:text-etheri-yellow transition-all duration-300 hover:drop-shadow-lg"
+                  className="font-noto font-bold text-lg px-3 py-2 rounded-full hover:text-etheri-yellow hover:bg-etheri-lightBlue transition-all duration-300 hover:drop-shadow-lg"
                 >
                   {link.name}
                 </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className="block px-3 py-2 rounded-md hover:bg-etheri-blue font-noto font-bold text-base transition-all duration-300 hover:drop-shadow-lg"
+                className="block px-3 py-2 rounded-md hover:bg-etheri-blue font-noto font-bold text-lg transition-all duration-300 hover:drop-shadow-lg"
                 onClick={toggleNav}
               >
                 {link.name}
