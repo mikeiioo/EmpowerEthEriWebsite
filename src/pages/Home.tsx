@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -96,7 +97,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section with Logo */}
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
             <div className="rainbow-card rounded-lg p-8 max-w-4xl mx-auto">
@@ -118,6 +119,18 @@ const Home = () => {
                 >
                   Become a Mentor
                 </a>
+              </div>
+            </div>
+            
+            {/* Logo positioned at bottom left */}
+            <div className="flex justify-start mt-8">
+              <div className="text-left">
+                <p className="text-sm text-gray-600 mb-2">EST. 2025</p>
+                <img 
+                  src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
+                  alt="EmpowerEtheri Logo" 
+                  className="w-16 h-16 rounded-full object-cover bg-transparent"
+                />
               </div>
             </div>
           </div>
