@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -33,7 +34,12 @@ const Navbar = () => {
     <nav className="relative bg-etheri-blue text-white shadow-md">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
+              alt="EmpowerEtheri Logo" 
+              className="w-8 h-8"
+            />
             <span className="text-xl font-bold">EmpowerEtheri</span>
           </Link>
 
