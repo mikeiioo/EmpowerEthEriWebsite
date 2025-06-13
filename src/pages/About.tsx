@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -36,7 +35,7 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-left mb-12">
-              <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka">
                 About
               </h1>
             </div>

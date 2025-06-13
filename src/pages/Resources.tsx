@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -8,7 +9,7 @@ const Resources = () => {
     <div className="rainbow-gradient">
       <div className="py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-10 text-center event-blue">
+          <h1 className="text-3xl font-bold mb-10 text-center event-blue font-fredoka">
             {t('navResources')}
           </h1>
           <div className="max-w-3xl mx-auto">
