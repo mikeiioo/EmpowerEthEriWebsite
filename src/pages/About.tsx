@@ -86,7 +86,7 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold mb-6 text-center event-blue">
+              <h2 className="text-4xl font-bold mb-6 text-center event-blue">
                 {t('ourGoals')}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
@@ -124,8 +124,8 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="rainbow-card rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-10 text-center event-blue">
-                  {t('faq')}
+                <h2 className="text-4xl font-bold mb-10 text-center event-blue">
+                  FAQ
                 </h2>
                 <Accordion type="single" collapsible className="w-full">
                   {faqItems.map((item, index) => (
