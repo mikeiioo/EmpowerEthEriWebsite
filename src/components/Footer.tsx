@@ -18,7 +18,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
               alt="EmpowerEtheri Logo" 
-              className="w-[125px] h-[125px] rounded-full object-cover bg-transparent ml-[25px]"
+              className="w-[90px] h-[90px] rounded-full object-cover bg-transparent ml-[25px]"
             />
           </div>
 
