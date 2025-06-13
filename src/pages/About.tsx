@@ -1,17 +1,10 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import ProfileCard from '../components/ProfileCard';
 
 const About = () => {
   const { t } = useLanguage();
-
-  const founderData = {
-    name: "Jane Doe",
-    role: "Founder & CEO",
-    bio: "Jane Doe is a passionate advocate for youth empowerment with over 10 years of experience in education and mentorship. After immigrating from Eritrea to the United States as a child, she dedicated her career to building bridges for other young immigrants.",
-    imageUrl: "/placeholder.svg",
-  };
 
   const faqItems = [
     {
@@ -39,19 +32,28 @@ const About = () => {
   return (
     <div className="rainbow-gradient">
       <div className="flex flex-col">
-        {/* Founder Section */}
+        {/* Header Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-10 text-center event-blue">
-              {t('aboutFounder')}
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <ProfileCard 
-                name={founderData.name}
-                role={founderData.role}
-                bio={founderData.bio}
-                imageUrl={founderData.imageUrl}
-              />
+            <div className="text-left mb-12">
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
+                About
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        {/* About Text Block */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="rainbow-card rounded-lg p-8">
+                <div className="prose prose-lg mx-auto">
+                  <p className="mb-4 text-gray-700">
+                    [Add your paragraph text here - this section is ready for your content]
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -89,27 +91,27 @@ const About = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Education Support</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">College Admissions</h3>
                   <p className="text-gray-700">
-                    Provide guidance and resources for academic success from high school through higher education.
+                    Guidance and support for navigating the college application process and higher education opportunities.
                   </p>
                 </div>
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Career Development</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">Scholarship Support</h3>
+                  <p className="text-gray-700">
+                    Assistance in finding and applying for scholarships to make education more accessible and affordable.
+                  </p>
+                </div>
+                <div className="rainbow-card p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-3 event-blue">Career Guidance</h3>
                   <p className="text-gray-700">
                     Connect youth with professionals in diverse fields to explore career paths and build networks.
                   </p>
                 </div>
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Cultural Connection</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">Expanding the Habesha network</h3>
                   <p className="text-gray-700">
-                    Foster pride in cultural heritage while navigating multicultural identities.
-                  </p>
-                </div>
-                <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Community Building</h3>
-                  <p className="text-gray-700">
-                    Create a supportive network of peers and mentors to strengthen community bonds.
+                    Building connections within the Habesha community to strengthen cultural bonds and professional relationships.
                   </p>
                 </div>
               </div>
