@@ -31,7 +31,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative bg-etheri-blue text-white shadow-md">
+    <nav className="relative bg-etheri-blue text-white shadow-md rounded-b-3xl">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="hover:text-etheri-yellow transition-colors"
+                  className="font-noto font-bold hover:text-etheri-yellow transition-all duration-300 hover:drop-shadow-lg"
                 >
                   {link.name}
                 </Link>
@@ -106,13 +106,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-etheri-lightBlue">
+        <div className="md:hidden bg-etheri-lightBlue rounded-b-3xl">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className="block px-3 py-2 rounded-md hover:bg-etheri-blue"
+                className="block px-3 py-2 rounded-md hover:bg-etheri-blue font-noto font-bold transition-all duration-300 hover:drop-shadow-lg"
                 onClick={toggleNav}
               >
                 {link.name}

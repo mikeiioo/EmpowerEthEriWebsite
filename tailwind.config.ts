@@ -101,6 +101,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				noto: ['Noto Sans', 'sans-serif'],
 			}
 		}
 	},
