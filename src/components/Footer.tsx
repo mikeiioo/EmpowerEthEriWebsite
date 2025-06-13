@@ -13,13 +13,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-start">
-            <h3 className="text-xl font-bold mb-4">EmpowerEtheri</h3>
+            <h3 className="text-xl font-bold mb-4">EmpowerEthEri</h3>
             <p className="text-sm mb-4">
               EST. 2025
             </p>
             <img 
               src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
-              alt="EmpowerEtheri Logo" 
+              alt="EmpowerEthEri Logo" 
               className="w-[90px] h-[90px] rounded-full object-cover bg-transparent ml-[25px]"
             />
           </div>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-sm text-center">
-          <p>&copy; {currentYear} EmpowerEtheri. All rights reserved.</p>
+          <p>&copy; {currentYear} EmpowerEthEri. All rights reserved.</p>
         </div>
       </div>
     </footer>
