@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ProfileCard from '../components/ProfileCard';
@@ -237,25 +236,12 @@ const Directory = () => {
     <div className="rainbow-gradient">
       <div className="py-16">
         <div className="container mx-auto px-4">
-          {/* Updated Header Section with rainbow star graphic */}
-          <div className="text-center mb-12 relative">
-            {/* Rainbow star graphic stretched from left edge with transparent background */}
-            <img 
-              src="/lovable-uploads/da935b25-d018-4f14-b09e-ccad4fc8b69f.png" 
-              alt="Rainbow star" 
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 w-48 h-32 md:w-64 md:h-40 opacity-80 z-0 object-cover mix-blend-multiply"
-              style={{ 
-                left: '-2rem',
-                width: 'clamp(200px, 35vw, 400px)',
-                height: 'clamp(120px, 20vw, 240px)',
-                objectPosition: 'left center',
-                filter: 'brightness(1.1) contrast(1.1)'
-              }}
-            />
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue relative z-10">
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
               {t('navDirectory')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 font-medium relative z-10">
+            <p className="text-lg md:text-xl text-gray-700 font-medium">
               Meet the mentors behind EmpowerEthEri and stay connected!
             </p>
           </div>
