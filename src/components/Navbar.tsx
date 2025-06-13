@@ -38,7 +38,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
               alt="EmpowerEtheri Logo" 
-              className="w-8 h-8"
+              className="w-11 h-11 rounded-full object-cover bg-transparent"
             />
             <span className="text-xl font-bold">EmpowerEtheri</span>
           </Link>
