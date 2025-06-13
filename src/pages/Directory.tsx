@@ -232,10 +232,12 @@ const Directory = () => {
         <div className="container mx-auto px-4">
           {/* Header Section */}
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka" 
+                style={{ textShadow: '2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black' }}>
               {t('navDirectory')}
             </h1>
-            <p className="text-lg md:text-xl text-etheri-yellow font-medium font-fredoka">
+            <p className="text-lg md:text-xl text-etheri-yellow font-medium font-fredoka font-bold"
+               style={{ textShadow: '1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black' }}>
               Meet the mentors behind EmpowerEthEri and stay connected!
             </p>
           </div>
