@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
@@ -19,7 +18,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
               alt="EmpowerEtheri Logo" 
-              className="w-16 h-16 rounded-full object-cover bg-transparent"
+              className="w-[90px] h-[90px] rounded-full object-cover bg-transparent ml-[10px]"
             />
           </div>
 
