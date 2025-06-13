@@ -237,16 +237,14 @@ const Directory = () => {
     <div className="rainbow-gradient">
       <div className="py-16">
         <div className="container mx-auto px-4">
-          {/* Header Section with white card background */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-12">
-            <div className="text-center">
-              <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
-                {t('navDirectory')}
-              </h1>
-              <p className="text-lg md:text-xl text-gray-700 font-medium">
-                Meet the mentors behind EmpowerEthEri and stay connected!
-              </p>
-            </div>
+          {/* Updated Header Section with bigger header and smaller subheading */}
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
+              {t('navDirectory')}
+            </h1>
+            <p className="text-lg md:text-xl text-gray-700 font-medium">
+              Meet the mentors behind EmpowerEthEri and stay connected!
+            </p>
           </div>
 
           {/* Tab Switcher */}
