@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ProfileCard from '../components/ProfileCard';
@@ -236,12 +237,12 @@ const Directory = () => {
     <div className="rainbow-gradient">
       <div className="py-16">
         <div className="container mx-auto px-4">
-          {/* Updated Header Section */}
+          {/* Updated Header Section with bigger header and smaller subheading */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 event-blue">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue">
               {t('navDirectory')}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 font-medium">
+            <p className="text-lg md:text-xl text-gray-700 font-medium">
               Meet the mentors behind EmpowerEthEri and stay connected!
             </p>
           </div>
