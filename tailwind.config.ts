@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -102,7 +101,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				noto: ['Noto Sans', 'sans-serif'],
-				knicknack: ['Knicknack', 'cursive'],
+				fredoka: ['Fredoka', 'cursive'],
 			}
 		}
 	},
