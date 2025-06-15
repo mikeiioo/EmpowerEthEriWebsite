@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -81,17 +80,17 @@ const Home = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="rainbow-card p-8 rounded-lg text-center">
-                <div className="text-4xl font-bold event-blue mb-2">100+</div>
-                <p className="text-gray-600">Youth Mentored</p>
+              <div className="p-8 rounded-lg text-center bg-green-500 text-white shadow-lg">
+                <div className="text-4xl font-bold mb-2">100+</div>
+                <p className="text-white">Youth Mentored</p>
               </div>
-              <div className="rainbow-card p-8 rounded-lg text-center">
-                <div className="text-4xl font-bold event-blue mb-2">30+</div>
-                <p className="text-gray-600">Active Mentors</p>
+              <div className="p-8 rounded-lg text-center bg-red-500 text-white shadow-lg">
+                <div className="text-4xl font-bold mb-2">25</div>
+                <p className="text-white">Active Mentors</p>
               </div>
-              <div className="rainbow-card p-8 rounded-lg text-center">
-                <div className="text-4xl font-bold event-blue mb-2">15+</div>
-                <p className="text-gray-600">Partner Organizations</p>
+              <div className="p-8 rounded-lg text-center bg-blue-500 text-white shadow-lg">
+                <div className="text-4xl font-bold mb-2">20+</div>
+                <p className="text-white">Partner Organizations</p>
               </div>
             </div>
           </div>
