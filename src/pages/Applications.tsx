@@ -93,6 +93,16 @@ const Applications = () => {
           <p className="mb-8 text-lg text-gray-700">
             Browse our list of resources for college, internship, and job applications.
           </p>
+          {/* Move Back to Resources button above the search bar, make it small */}
+          <div className="mb-8 text-left">
+            <Link
+              to="/resources"
+              className="inline-block px-4 py-1.5 rounded-full text-sm bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition mb-6"
+            >
+              &larr; Back to Resources
+            </Link>
+          </div>
+          {/* Search bar with rounded styling */}
           <div className="mb-8 flex items-center gap-2 max-w-md w-full">
             <div className="relative w-full">
               <Input
@@ -100,7 +110,7 @@ const Applications = () => {
                 placeholder="Search applications..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="pl-10 w-full"
+                className="pl-10 w-full rounded-full"
                 aria-label="Search applications"
               />
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
@@ -148,14 +158,7 @@ const Applications = () => {
               </a>
             ))}
           </div>
-          <div className="mt-10 text-center">
-            <Link
-              to="/resources"
-              className="inline-block px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition"
-            >
-              &larr; Back to Resources
-            </Link>
-          </div>
+          {/* Remove the duplicate Back to Resources button from here */}
         </div>
       </div>
     </div>
@@ -163,3 +166,4 @@ const Applications = () => {
 };
 
 export default Applications;
+
