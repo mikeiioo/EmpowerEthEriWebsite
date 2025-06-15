@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -60,8 +61,7 @@ const Home = () => {
               <div className="rainbow-card rounded-lg p-8">
                 <h2 className="text-3xl font-bold mb-6 event-blue">Our Mission</h2>
                 <p className="text-lg mb-8 text-gray-700">
-                  EmpowerEtheri is dedicated to connecting young Eritrean and Ethiopian people with mentors
-                  who can guide them through education, career development, and cultural identity.
+                  EmpowerEthEri is a nonprofit mentorship program dedicated to connecting young Eritrean and Ethiopian people within the Metro Atlanta community to mentors who can guide them through college applications, career development, and navigating adulthood.
                 </p>
                 <div className="mt-8">
                   <a 
@@ -128,3 +128,4 @@ const Home = () => {
 };
 
 export default Home;
+
