@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
@@ -74,6 +73,14 @@ const Academics = () => {
           <p className="mb-8 text-lg text-gray-700">
             Browse study guides, tutoring, and academic support resources to help you thrive.
           </p>
+          <div className="mb-8 text-left">
+            <Link
+              to="/resources"
+              className="inline-block px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition mb-6"
+            >
+              &larr; Back to Resources
+            </Link>
+          </div>
           <div className="mb-8 flex items-center gap-2 max-w-md w-full">
             <div className="relative w-full">
               <Input
@@ -128,14 +135,6 @@ const Academics = () => {
                 </div>
               </a>
             ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link
-              to="/resources"
-              className="inline-block px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition"
-            >
-              &larr; Back to Resources
-            </Link>
           </div>
         </div>
       </div>
