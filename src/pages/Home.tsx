@@ -66,17 +66,26 @@ const Home = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 event-blue">
-              EmpowerEthEri
+            <h1
+              className="font-bold event-blue mb-4"
+              style={{
+                fontSize: "clamp(2.8rem, 8vw, 5rem)",
+                fontWeight: 900,
+                lineHeight: 1.1,
+                letterSpacing: '-0.015em',
+              }}
+            >
+              <span className="drop-shadow-lg">EmpowerEthEri</span>
             </h1>
-            <div className="text-sm md:text-lg text-gray-700 mb-6">
-              Bringing Academic and Career Empowerment to the Habesha Diaspora
+            <div className="font-bold text-lg md:text-2xl text-gray-700 mb-6">
+              <span>Bringing Academic and Career Empowerment to the Habesha Diaspora</span>
             </div>
             <div className="mt-8 flex justify-center">
-              <img 
-                src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
+              <img
+                src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png"
                 alt="EmpowerEthEri Logo"
-                className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full object-cover"
+                className="w-56 h-56 md:w-[18rem] md:h-[18rem] mx-auto rounded-full object-cover shadow-xl animate-slide-fade-in-up"
+                style={{ aspectRatio: 1 }}
               />
             </div>
           </div>

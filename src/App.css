@@ -27,6 +27,17 @@
   }
 }
 
+@keyframes slide-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -39,4 +50,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Utility class for animating the logo up and fading in */
+.animate-slide-fade-in-up {
+  animation: slide-fade-in-up 1.1s cubic-bezier(0.33, 1, 0.68, 1) both;
 }
