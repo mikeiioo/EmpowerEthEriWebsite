@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -28,6 +29,13 @@ const About = () => {
     }
   ];
 
+  // Placeholder images - easy to replace with real URLs later
+  const photoStackImages = [
+    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop"
+  ];
+
   return (
     <div className="rainbow-gradient">
       <div className="flex flex-col">
@@ -42,13 +50,41 @@ const About = () => {
           </div>
         </section>
 
-        {/* Vision Statement */}
+        {/* Vision Statement with PhotoStack */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-left mb-12 max-w-md">
-              <h3 className="text-3xl font-bold mb-4 text-red-600 font-fredoka">
-                EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
-              </h3>
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
+              {/* Vision Statement - Left Side */}
+              <div className="text-left mb-12 max-w-md">
+                <h3 className="text-3xl font-bold mb-4 text-red-600 font-fredoka">
+                  EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
+                </h3>
+              </div>
+
+              {/* PhotoStack - Right Side */}
+              <div className="flex-shrink-0 lg:ml-auto">
+                <div className="relative w-64 h-64">
+                  {photoStackImages.map((image, index) => (
+                    <div
+                      key={index}
+                      className={`absolute bg-white p-3 rounded-lg shadow-lg transform transition-transform hover:scale-105 ${
+                        index === 0 ? 'rotate-3 z-30 top-0 left-4' :
+                        index === 1 ? '-rotate-2 z-20 top-6 left-0' :
+                        'rotate-1 z-10 top-12 left-8'
+                      }`}
+                      style={{
+                        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)'
+                      }}
+                    >
+                      <img
+                        src={image}
+                        alt={`Photo ${index + 1}`}
+                        className="w-48 h-36 object-cover rounded"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
