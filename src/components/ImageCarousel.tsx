@@ -54,7 +54,7 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
   return (
     <>
       {/* Carousel */}
-      <div className="relative w-full h-[400px] md:h-[520px] bg-gray-200 overflow-hidden rounded-xl shadow-lg flex items-center justify-center">
+      <div className="relative w-full h-[400px] md:h-[520px] bg-black overflow-hidden rounded-xl shadow-lg flex items-center justify-center">
         <div 
           className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -62,15 +62,16 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
           {images.map((image, index) => (
             <div
               key={index}
-              className="w-full h-[400px] md:h-[520px] flex-shrink-0 relative flex items-center justify-center cursor-pointer bg-gray-100"
+              className="w-full h-[400px] md:h-[520px] flex-shrink-0 relative flex items-center justify-center cursor-pointer"
               onClick={() => openModal(image)}
             >
+              {/* Black overlay for side bars */}
+              <div className="absolute inset-0 bg-black" aria-hidden="true" />
               <img
                 src={image.src}
                 alt={image.alt}
-                className="max-w-full max-h-full object-contain m-auto transition-transform duration-300"
+                className="max-w-full max-h-full object-contain m-auto transition-transform duration-300 relative z-10"
                 style={{
-                  // These styles ensure it's always centered and fit, no matter the image aspect ratio
                   display: 'block',
                   margin: 'auto',
                   width: '100%',
@@ -79,7 +80,7 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
                   objectPosition: 'center',
                 }}
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 z-20">
                 <p className="text-white text-sm font-medium text-center">{image.caption}</p>
               </div>
             </div>
