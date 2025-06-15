@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -134,7 +133,7 @@ const Home = () => {
                 <p className="text-white">Youth Mentored</p>
               </div>
               <div className="p-8 rounded-lg text-center bg-red-500 text-white shadow-lg">
-                <div className="text-4xl font-bold mb-2">25</div>
+                <div className="text-4xl font-bold mb-2">25+</div>
                 <p className="text-white">Active Mentors</p>
               </div>
               <div className="p-8 rounded-lg text-center bg-blue-500 text-white shadow-lg">
@@ -177,4 +176,3 @@ const Home = () => {
 };
 
 export default Home;
-
