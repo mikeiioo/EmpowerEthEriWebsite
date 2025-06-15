@@ -47,18 +47,12 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="rainbow-card rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-6 text-center event-blue">
+                <h2 className="text-3xl font-bold mb-6 text-center text-green-600">
                   {t('missionStatement')}
                 </h2>
                 <div className="prose prose-lg mx-auto">
                   <p className="mb-4 text-gray-700">
-                    EmpowerEthEri exists to bridge the gap between generations, connecting young Eritrean and 
-                    Ethiopian individuals with mentors who can guide them through the complexities of education, 
-                    career development, and cultural identity in the diaspora.
-                  </p>
-                  <p className="text-gray-700">
-                    We believe that by fostering these connections, we can help preserve cultural heritage 
-                    while empowering the next generation to thrive in their communities and professional lives.
+                    EmpowerEthEri aims to maximize higher education opportunities for East African youth by providing information and resources to ensure their success. Our organization utilizes a free mentorship program created by first-generation East African college students and conducts informational events tailored to support academic growth and achievement. When students are fully equipped to succeed during the college application process, we believe this can then empower kids to fulfill their potential—whatever that may look like.
                   </p>
                 </div>
               </div>
