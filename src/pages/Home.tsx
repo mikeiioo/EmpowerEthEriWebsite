@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -65,14 +66,17 @@ const Home = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 event-blue">
-              {t('tagline')}
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 event-blue">
+              EmpowerEthEri
             </h1>
+            <div className="text-sm md:text-lg text-gray-700 mb-6">
+              Bringing Academic and Career Empowerment to the Habesha Diaspora
+            </div>
             <div className="mt-8 flex justify-center">
               <img 
-                src="/lovable-uploads/3136d750-e6e8-4eab-a410-4e320fef8135.png" 
-                alt="EmpowerEtheri Logo" 
-                className="w-64 h-64 md:w-80 md:h-80 mx-auto"
+                src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png" 
+                alt="EmpowerEthEri Logo"
+                className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full object-cover"
               />
             </div>
           </div>
@@ -162,3 +166,4 @@ const Home = () => {
 };
 
 export default Home;
+
