@@ -8,6 +8,13 @@ const Footer = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
+  // Social media links from the contacts data
+  const socialLinks = {
+    facebook: "https://www.facebook.com/people/Empower-EthEri/pfbid033jiPoC2cZgH864Ms149QFM9ZogdCQRVNxhBvyKFQofdywWXBHV4pHreihx2962Zml/?mibextid=wwXIfr&rdid=V5YSkRyU231yOb1L&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FckteKjgw%2F%3Fmibextid%3DwwXIfr",
+    instagram: "https://www.instagram.com/empoweretheri/",
+    linkedin: "https://www.linkedin.com/in/empower-etheri-312769360/"
+  };
+
   return (
     <footer className="bg-etheri-blue text-white py-8">
       <div className="container mx-auto px-4">
@@ -70,15 +77,30 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Connect</h4>
             <p className="text-sm mb-2">info@empoweretheri.org</p>
             <div className="flex space-x-4 mt-4">
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+              <a 
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer"
+              >
                 <Facebook size={16} />
-              </div>
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+              </a>
+              <a 
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer"
+              >
                 <Instagram size={16} />
-              </div>
-              <div className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer">
+              </a>
+              <a 
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors cursor-pointer"
+              >
                 <Linkedin size={16} />
-              </div>
+              </a>
             </div>
           </div>
         </div>
