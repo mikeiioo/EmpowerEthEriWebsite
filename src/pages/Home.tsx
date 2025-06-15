@@ -6,23 +6,58 @@ import ImageCarousel from '../components/ImageCarousel';
 const Home = () => {
   const { t } = useLanguage();
 
-  // Sample images for the carousel - you can replace these with your own images
+  // Updated carousel images using provided uploads
   const carouselImages = [
     {
-      src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop",
-      alt: "Young person mentoring",
-      caption: "Empowering the next generation through mentorship"
+      src: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
     },
     {
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
-      alt: "Learning together",
-      caption: "Building skills for tomorrow's challenges"
+      src: "/lovable-uploads/434f3934-db86-4be1-9504-bbde560c3030.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
     },
     {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-      alt: "Digital literacy",
-      caption: "Bridging the digital divide in our community"
-    }
+      src: "/lovable-uploads/d7638d8b-6b0f-4630-bd45-956c85476903.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
+    {
+      src: "/lovable-uploads/618ff5d7-b258-496d-809c-1183c8e3918f.png",
+      alt: "ALT TEXT HERE",
+      caption: "CAPTION HERE"
+    },
   ];
 
   return (
