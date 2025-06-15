@@ -54,7 +54,7 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
   return (
     <>
       {/* Carousel */}
-      <div className="relative w-full h-[400px] md:h-[520px] bg-black overflow-hidden rounded-xl shadow-lg flex items-center justify-center">
+      <div className="relative w-full h-[400px] md:h-[520px] overflow-hidden rounded-xl shadow-lg flex items-center justify-center bg-black">
         <div 
           className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -65,8 +65,7 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
               className="w-full h-[400px] md:h-[520px] flex-shrink-0 relative flex items-center justify-center cursor-pointer"
               onClick={() => openModal(image)}
             >
-              {/* Black overlay for side bars */}
-              <div className="absolute inset-0 bg-black" aria-hidden="true" />
+              {/* REMOVED black overlay for side bars */}
               <img
                 src={image.src}
                 alt={image.alt}
@@ -92,17 +91,17 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
           <>
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-all z-10"
+              className="group absolute left-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white/90 rounded-full p-2 shadow-lg transition-all z-20 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white/70"
               aria-label="Previous image"
             >
-              <ChevronLeft className="w-7 h-7 text-gray-800" />
+              <ChevronLeft className="w-7 h-7 text-gray-900 group-hover:scale-110 transition-transform" />
             </button>
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-all z-10"
+              className="group absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white/90 rounded-full p-2 shadow-lg transition-all z-20 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-white/70"
               aria-label="Next image"
             >
-              <ChevronRight className="w-7 h-7 text-gray-800" />
+              <ChevronRight className="w-7 h-7 text-gray-900 group-hover:scale-110 transition-transform" />
             </button>
           </>
         )}
@@ -144,7 +143,7 @@ const ImageCarousel = ({ images, autoScrollInterval = 4000 }: ImageCarouselProps
             </div>
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all"
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 rounded-full p-2 transition-all"
               aria-label="Close modal"
             >
               <span className="text-white text-xl font-bold">×</span>
