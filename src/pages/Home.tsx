@@ -90,7 +90,7 @@ const Home = () => {
               </div>
               <div className="p-8 rounded-lg text-center bg-blue-500 text-white shadow-lg">
                 <div className="text-4xl font-bold mb-2">20+</div>
-                <p className="text-white">Top 20 schools</p>
+                <p className="text-white">schools across the country</p>
               </div>
             </div>
           </div>
