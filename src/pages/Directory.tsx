@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ProfileCard from '../components/ProfileCard';
@@ -223,6 +222,7 @@ const Directory = () => {
       role: "Professional Network",
       bio: "Connect with us on LinkedIn for professional networking and career opportunities.",
       imageUrl: "/placeholder.svg",
+      link: "https://www.linkedin.com/in/empower-etheri-312769360/",
     },
   ];
 
@@ -286,16 +286,34 @@ const Directory = () => {
                   {t('directoryContacts')}
                 </h2>
                 <div className="grid grid-cols-1 gap-6">
-                  {contacts.map((contact) => (
-                    <ProfileCard
-                      key={contact.id}
-                      name={contact.name}
-                      role={contact.role}
-                      bio={contact.bio}
-                      imageUrl={contact.imageUrl}
-                      showSocialIcons={false}
-                    />
-                  ))}
+                  {contacts.map((contact) =>
+                    contact.link ? (
+                      <a
+                        key={contact.id}
+                        href={contact.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <ProfileCard
+                          name={contact.name}
+                          role={contact.role}
+                          bio={contact.bio}
+                          imageUrl={contact.imageUrl}
+                          showSocialIcons={false}
+                        />
+                      </a>
+                    ) : (
+                      <ProfileCard
+                        key={contact.id}
+                        name={contact.name}
+                        role={contact.role}
+                        bio={contact.bio}
+                        imageUrl={contact.imageUrl}
+                        showSocialIcons={false}
+                      />
+                    )
+                  )}
                 </div>
               </div>
             )}
