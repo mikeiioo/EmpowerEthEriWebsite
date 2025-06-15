@@ -87,27 +87,32 @@ const Applications = () => {
                   href={res.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block min-w-[310px] max-w-xs transition shadow-xl rounded-2xl bg-white/80 hover:bg-white scale-100 hover:scale-105 ring-1 ring-etheri-blue/10 hover:ring-etheri-blue/70 cursor-pointer"
+                  className="group block min-w-[270px] max-w-xs h-[340px] md:h-[370px] transition shadow-xl rounded-2xl bg-white/80 hover:bg-white scale-100 hover:scale-105 ring-1 ring-etheri-blue/10 hover:ring-etheri-blue/70 cursor-pointer flex flex-col"
                   style={{ textDecoration: "none" }}
                   tabIndex={0}
                 >
-                  <div className="h-44 w-full flex items-center justify-center overflow-hidden rounded-t-2xl bg-gray-100">
+                  {/* Image anchored at the top with proper fit */}
+                  <div className="flex-shrink-0 w-full h-36 md:h-40 flex items-start justify-center overflow-hidden rounded-t-2xl bg-gray-100 border-b">
                     {res.image ? (
                       <img
                         src={res.image}
                         alt={res.title}
-                        className="object-contain h-full max-h-44 w-full transition duration-200 group-hover:scale-105"
+                        className="object-contain h-full w-full"
+                        style={{ maxHeight: "100%", maxWidth: "100%" }}
                       />
                     ) : (
-                      <div className="text-center text-gray-400">No Image</div>
+                      <div className="w-full h-full flex items-center justify-center text-center text-gray-400">No Image</div>
                     )}
                   </div>
-                  <div className="p-5">
-                    <div className="font-bold text-xl text-etheri-blue group-hover:text-etheri-lightBlue mb-2">
+                  {/* Text and title fill the rest of the block; anchored and fit */}
+                  <div className="flex-1 flex flex-col px-4 py-4">
+                    <div className="font-semibold text-lg md:text-xl text-etheri-blue group-hover:text-etheri-lightBlue mb-2 line-clamp-2 overflow-ellipsis break-words">
                       {res.title}
                     </div>
-                    <div className="text-gray-700 text-base mb-2">{res.description}</div>
-                    <div className="inline-flex items-center gap-1 text-sm text-etheri-yellow group-hover:text-yellow-600">
+                    <div className="text-gray-700 text-sm md:text-base mb-3 leading-snug flex-1 overflow-hidden line-clamp-4 break-words">
+                      {res.description}
+                    </div>
+                    <div className="mt-auto inline-flex items-center gap-1 text-sm text-etheri-yellow group-hover:text-yellow-600">
                       Visit Site <span aria-hidden>↗</span>
                     </div>
                   </div>
