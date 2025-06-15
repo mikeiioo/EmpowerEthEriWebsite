@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -47,8 +45,8 @@ const About = () => {
         {/* Vision Statement */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="text-left mb-12">
-              <h3 className="text-3xl font-bold mb-4 text-white font-fredoka">
+            <div className="text-left mb-12 max-w-md">
+              <h3 className="text-3xl font-bold mb-4 text-red-600 font-fredoka">
                 EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
               </h3>
             </div>
@@ -140,4 +138,3 @@ const About = () => {
 };
 
 export default About;
-
