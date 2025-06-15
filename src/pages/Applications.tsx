@@ -1,15 +1,16 @@
 
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
-import { ScrollArea } from "../components/ui/scroll-area";
+import { Input } from "../components/ui/input";
+import { Search } from "lucide-react";
 
 const applicationResources = [
   {
     title: "Common App",
     description: "Apply to hundreds of colleges with a single application. Widely used for undergraduate admissions in the US.",
     url: "https://www.commonapp.org/",
-    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png", // example, update image if you want
+    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
   },
   {
     title: "Coalition for College",
@@ -69,6 +70,19 @@ const applicationResources = [
 
 const Applications = () => {
   const { t } = useLanguage();
+  const [search, setSearch] = useState("");
+
+  // Filter apps by title or description, case-insensitive match
+  const filteredResources = useMemo(() => {
+    if (!search.trim()) return applicationResources;
+    const lower = search.toLowerCase();
+    return applicationResources.filter(
+      (res) =>
+        res.title.toLowerCase().includes(lower) ||
+        res.description.toLowerCase().includes(lower)
+    );
+  }, [search]);
+
   return (
     <div className="rainbow-gradient">
       <div className="py-16">
@@ -76,50 +90,64 @@ const Applications = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 event-blue font-fredoka">
             {t("Applications") || "Applications"}
           </h1>
-          <p className="mb-10 text-lg text-gray-700">
-            Browse our list of resources for college, internship, and job applications. Scroll to explore &rarr;
+          <p className="mb-8 text-lg text-gray-700">
+            Browse our list of resources for college, internship, and job applications.
           </p>
-          <ScrollArea className="w-full whitespace-nowrap">
-            <div className="flex gap-6 pb-2">
-              {applicationResources.map((res) => (
-                <a
-                  key={res.title}
-                  href={res.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block min-w-[270px] max-w-xs h-[340px] md:h-[370px] transition shadow-xl rounded-2xl bg-white/80 hover:bg-white scale-100 hover:scale-105 ring-1 ring-etheri-blue/10 hover:ring-etheri-blue/70 cursor-pointer flex flex-col"
-                  style={{ textDecoration: "none" }}
-                  tabIndex={0}
-                >
-                  {/* Image anchored at the top with proper fit */}
-                  <div className="flex-shrink-0 w-full h-36 md:h-40 flex items-start justify-center overflow-hidden rounded-t-2xl bg-gray-100 border-b">
-                    {res.image ? (
-                      <img
-                        src={res.image}
-                        alt={res.title}
-                        className="object-contain h-full w-full"
-                        style={{ maxHeight: "100%", maxWidth: "100%" }}
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-center text-gray-400">No Image</div>
-                    )}
-                  </div>
-                  {/* Text and title fill the rest of the block; anchored and fit */}
-                  <div className="flex-1 flex flex-col px-4 py-4">
-                    <div className="font-semibold text-lg md:text-xl text-etheri-blue group-hover:text-etheri-lightBlue mb-2 line-clamp-2 overflow-ellipsis break-words">
-                      {res.title}
-                    </div>
-                    <div className="text-gray-700 text-sm md:text-base mb-3 leading-snug flex-1 overflow-hidden line-clamp-4 break-words">
-                      {res.description}
-                    </div>
-                    <div className="mt-auto inline-flex items-center gap-1 text-sm text-etheri-yellow group-hover:text-yellow-600">
-                      Visit Site <span aria-hidden>↗</span>
-                    </div>
-                  </div>
-                </a>
-              ))}
+          <div className="mb-8 flex items-center gap-2 max-w-md w-full">
+            <div className="relative w-full">
+              <Input
+                type="text"
+                placeholder="Search applications..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="pl-10 w-full"
+                aria-label="Search applications"
+              />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
             </div>
-          </ScrollArea>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+            {filteredResources.length === 0 && (
+              <div className="col-span-full text-center text-gray-500 py-10">
+                No results found.
+              </div>
+            )}
+            {filteredResources.map((res) => (
+              <a
+                key={res.title}
+                href={res.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block transition shadow-xl rounded-2xl bg-white/80 hover:bg-white scale-100 hover:scale-105 ring-1 ring-etheri-blue/10 hover:ring-etheri-blue/70 cursor-pointer flex flex-col h-[340px] md:h-[370px]"
+                style={{ textDecoration: "none" }}
+                tabIndex={0}
+              >
+                <div className="flex-shrink-0 w-full h-36 md:h-40 flex items-start justify-center overflow-hidden rounded-t-2xl bg-gray-100 border-b">
+                  {res.image ? (
+                    <img
+                      src={res.image}
+                      alt={res.title}
+                      className="object-contain h-full w-full"
+                      style={{ maxHeight: "100%", maxWidth: "100%" }}
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-center text-gray-400">No Image</div>
+                  )}
+                </div>
+                <div className="flex-1 flex flex-col px-4 py-4">
+                  <div className="font-semibold text-lg md:text-xl text-etheri-blue group-hover:text-etheri-lightBlue mb-2 line-clamp-2 overflow-ellipsis break-words">
+                    {res.title}
+                  </div>
+                  <div className="text-gray-700 text-sm md:text-base mb-3 leading-snug flex-1 overflow-hidden line-clamp-4 break-words">
+                    {res.description}
+                  </div>
+                  <div className="mt-auto inline-flex items-center gap-1 text-sm text-etheri-yellow group-hover:text-yellow-600">
+                    Visit Site <span aria-hidden>↗</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
           <div className="mt-10 text-center">
             <Link
               to="/resources"
