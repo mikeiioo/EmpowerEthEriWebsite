@@ -76,7 +76,7 @@ const Academics = () => {
           <div className="mb-8 text-left">
             <Link
               to="/resources"
-              className="inline-block px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition mb-6"
+              className="inline-block px-4 py-1.5 rounded-full text-sm bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition mb-6"
             >
               &larr; Back to Resources
             </Link>
@@ -88,7 +88,7 @@ const Academics = () => {
                 placeholder="Search academic resources..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="pl-10 w-full"
+                className="pl-10 w-full rounded-full"
                 aria-label="Search academics"
               />
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
