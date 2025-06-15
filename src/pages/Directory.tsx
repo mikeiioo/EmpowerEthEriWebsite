@@ -208,6 +208,7 @@ const Directory = () => {
       role: "Social Media",
       bio: "Follow us on Instagram for updates, stories, and community highlights.",
       imageUrl: "/placeholder.svg",
+      link: "https://www.instagram.com/empoweretheri/",
     },
     {
       id: 3,
@@ -215,6 +216,7 @@ const Directory = () => {
       role: "Social Network",
       bio: "Connect with us on Facebook for community discussions and event updates.",
       imageUrl: "/placeholder.svg",
+      link: "https://www.facebook.com/people/Empower-EthEri/pfbid033jiPoC2cZgH864Ms149QFM9ZogdCQRVNxhBvyKFQofdywWXBHV4pHreihx2962Zml/?mibextid=wwXIfr&rdid=V5YSkRyU231yOb1L&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FckteKjgw%2F%3Fmibextid%3DwwXIfr",
     },
     {
       id: 4,
