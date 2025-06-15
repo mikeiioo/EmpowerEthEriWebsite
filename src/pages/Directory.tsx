@@ -201,7 +201,7 @@ const Directory = () => {
       name: "EmpowerEthEri Office",
       role: "Administrative Center",
       bio: "Our headquarters for program coordination, mentorship matching, and general inquiries.",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png", // updated image
     },
     {
       id: 2,
