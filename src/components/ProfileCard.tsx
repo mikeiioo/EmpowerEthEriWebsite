@@ -14,7 +14,11 @@ const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: Pro
   return (
     <div className="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-white shadow-sm border border-gray-200 transition-all hover:shadow-md">
       <div className="flex-shrink-0">
-        <img src={imageUrl} alt={name} className="w-full md:w-40 h-40 rounded-md object-cover" />
+        <img
+          src={imageUrl}
+          alt={name}
+          className="w-full md:w-40 h-40 rounded-md object-contain bg-gray-50"
+        />
       </div>
       <div className="flex-1">
         <div className="flex items-center gap-3 mb-2">
@@ -53,3 +57,4 @@ const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: Pro
 };
 
 export default ProfileCard;
+
