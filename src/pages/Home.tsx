@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -82,7 +81,7 @@ const Home = () => {
         {/* Image Carousel Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center event-blue">Our Impact</h2>
               <ImageCarousel images={carouselImages} />
             </div>
@@ -163,4 +162,3 @@ const Home = () => {
 };
 
 export default Home;
-
