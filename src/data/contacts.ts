@@ -21,7 +21,7 @@ export const contacts: Contact[] = [
     name: "Instagram",
     role: "Social Media",
     bio: "Follow us on Instagram for updates, stories, and community highlights.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/f975921b-bfed-4d89-8701-a154e3d83680.png",
     link: "https://www.instagram.com/empoweretheri/",
   },
   {
