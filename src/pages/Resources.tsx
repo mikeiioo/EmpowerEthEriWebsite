@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 
 const resourcesData = [
   {
-    key: "scholarships",
-    label: "Scholarships",
-    description: "Browse scholarships tailored for Eritrean and Ethiopian youth.",
-    to: "/resources/scholarships",
-  },
-  {
     key: "applications",
     label: "Applications",
     description: "Find internship, college, and job application resources.",
     to: "/resources/applications",
   },
   {
-    key: "programs",
-    label: "Programs",
-    description: "Discover mentorship and extracurricular programs.",
-    to: "/resources/programs",
+    key: "scholarships",
+    label: "Scholarships",
+    description: "Browse scholarships tailored for Eritrean and Ethiopian youth.",
+    to: "/resources/scholarships",
   },
   {
     key: "academics",
     label: "Academics",
     description: "Access study guides, tutoring, and academic support links.",
     to: "/resources/academics",
+  },
+  {
+    key: "programs",
+    label: "Programs",
+    description: "Discover mentorship and extracurricular programs.",
+    to: "/resources/programs",
   },
 ];
 
