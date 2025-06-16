@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -62,21 +61,21 @@ const About = () => {
                   <h2 className="text-4xl font-bold mb-6 event-blue font-fredoka">
                     Our Vision
                   </h2>
-                  <h3 className="text-3xl font-bold mb-4 text-green-600 font-fredoka">
+                  <h3 className="text-3xl font-bold mb-4 event-blue font-fredoka">
                     EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
                   </h3>
                 </div>
               </div>
 
-              {/* Triangular PhotoGrid - Right Side */}
+              {/* Waffle PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
                 <div className="flex flex-col items-center space-y-6">
-                  {/* Top row - 2 photos */}
+                  {/* Top row - 3 photos */}
                   <div className="flex space-x-6">
-                    {photoStackImages.slice(0, 2).map((image, index) => (
+                    {photoStackImages.slice(0, 3).map((image, index) => (
                       <div
                         key={index}
-                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-64 h-64"
                         style={{
                           boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                           zIndex: index % 2 === 0 ? 2 : 1
@@ -90,12 +89,12 @@ const About = () => {
                       </div>
                     ))}
                   </div>
-                  {/* Middle row - 2 photos */}
-                  <div className="flex space-x-6">
-                    {photoStackImages.slice(2, 4).map((image, index) => (
+                  {/* Bottom row - 2 photos centered between top ones */}
+                  <div className="flex space-x-6" style={{ marginLeft: '6rem' }}>
+                    {photoStackImages.slice(3, 5).map((image, index) => (
                       <div
-                        key={index + 2}
-                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
+                        key={index + 3}
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-64 h-64"
                         style={{
                           boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                           zIndex: index % 2 === 0 ? 2 : 1
@@ -103,27 +102,11 @@ const About = () => {
                       >
                         <img
                           src={image}
-                          alt={`Photo ${index + 3}`}
+                          alt={`Photo ${index + 4}`}
                           className="w-full h-full object-cover rounded-lg"
                         />
                       </div>
                     ))}
-                  </div>
-                  {/* Bottom row - 1 photo centered */}
-                  <div className="flex justify-center">
-                    <div
-                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
-                      style={{
-                        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        zIndex: 2
-                      }}
-                    >
-                      <img
-                        src={photoStackImages[4]}
-                        alt="Photo 5"
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
