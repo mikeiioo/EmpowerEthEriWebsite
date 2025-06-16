@@ -29,11 +29,14 @@ const About = () => {
     }
   ];
 
-  // Placeholder images - easy to replace with real URLs later
+  // Expanded photo collection with more diverse images
   const photoStackImages = [
     "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
   ];
 
   return (
@@ -66,17 +69,21 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-2 gap-6 w-[500px]">
+                <div className="relative w-[550px] h-[450px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
-                      className={`bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 ${
-                        index === 0 ? 'rotate-2 w-60 h-48' :
-                        index === 1 ? '-rotate-1 w-56 h-56 col-span-1' :
-                        'rotate-1 w-64 h-40'
+                      className={`absolute bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 ${
+                        index === 0 ? 'rotate-3 w-52 h-40 top-0 left-0' :
+                        index === 1 ? '-rotate-2 w-48 h-48 top-12 left-32' :
+                        index === 2 ? 'rotate-1 w-56 h-36 top-8 right-0' :
+                        index === 3 ? '-rotate-1 w-44 h-44 bottom-20 left-8' :
+                        index === 4 ? 'rotate-2 w-50 h-38 bottom-8 left-40' :
+                        'rotate-1 w-48 h-42 bottom-4 right-8'
                       }`}
                       style={{
-                        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)'
+                        boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
+                        zIndex: 6 - index
                       }}
                     >
                       <img
