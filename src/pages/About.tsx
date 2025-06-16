@@ -58,12 +58,14 @@ const About = () => {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Vision Statement - Left Side */}
               <div className="text-left mb-12 max-w-md">
-                <h2 className="text-4xl font-bold mb-6 event-blue font-fredoka">
-                  Our Vision
-                </h2>
-                <h3 className="text-3xl font-bold mb-4 text-green-600 font-fredoka">
-                  EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
-                </h3>
+                <div className="rainbow-card rounded-lg p-8">
+                  <h2 className="text-4xl font-bold mb-6 event-blue font-fredoka">
+                    Our Vision
+                  </h2>
+                  <h3 className="text-3xl font-bold mb-4 text-green-600 font-fredoka">
+                    EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
+                  </h3>
+                </div>
               </div>
 
               {/* Triangular PhotoGrid - Right Side */}
