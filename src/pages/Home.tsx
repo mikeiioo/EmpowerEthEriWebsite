@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -6,59 +5,23 @@ import ImageCarousel from '../components/ImageCarousel';
 const Home = () => {
   const { t } = useLanguage();
 
-  // Updated carousel images using centralized assets folder
-  // Each image represents different aspects of the EmpowerEthEri organization
+  // Updated carousel images to use the same three images from the About page
   const carouselImages = [
     {
-      src: "/src/assets/images/photo1.jpg", // Community meeting or mentorship session
+      src: "/lovable-uploads/89518ad1-c573-46d1-ad48-a9356b22120a.png",
       alt: "EmpowerEthEri community gathering",
       caption: "Building connections within our Habesha community"
     },
     {
-      src: "/src/assets/images/photo2.jpg", // Academic success or graduation
+      src: "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
       alt: "Student academic achievement",
       caption: "Celebrating educational milestones and success"
     },
     {
-      src: "/src/assets/images/photo3.jpg", // Mentorship in action
+      src: "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png",
       alt: "Mentor guiding student",
       caption: "One-on-one mentorship making a difference"
-    },
-    {
-      src: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png", // Organization activities
-      alt: "EmpowerEthEri program activities",
-      caption: "Engaging programs supporting youth development"
-    },
-    {
-      src: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png", // Career guidance
-      alt: "Career development workshop",
-      caption: "Preparing students for future career opportunities"
-    },
-    {
-      src: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png", // Educational resources
-      alt: "Educational support resources",
-      caption: "Providing comprehensive academic support"
-    },
-    {
-      src: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png", // Scholarship opportunities
-      alt: "Scholarship and funding opportunities",
-      caption: "Opening doors to higher education funding"
-    },
-    {
-      src: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png", // Community impact
-      alt: "Community impact and outreach",
-      caption: "Making a lasting impact in our community"
-    },
-    {
-      src: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png", // Networking events
-      alt: "Professional networking event",
-      caption: "Building professional networks for future success"
-    },
-    {
-      src: "/lovable-uploads/618ff5d7-b258-496d-809c-1183c8e3918f.png", // Success stories
-      alt: "Student success stories",
-      caption: "Celebrating the achievements of our mentees"
-    },
+    }
   ];
 
   return (
