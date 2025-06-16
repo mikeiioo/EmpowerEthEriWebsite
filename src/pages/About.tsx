@@ -66,14 +66,14 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-2 gap-4 w-80">
+                <div className="grid grid-cols-2 gap-6 w-[500px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
-                      className={`bg-white p-3 rounded-lg shadow-lg transform transition-transform hover:scale-105 ${
-                        index === 0 ? 'rotate-2 w-36 h-28' :
-                        index === 1 ? '-rotate-1 w-32 h-32 col-span-1' :
-                        'rotate-1 w-40 h-24'
+                      className={`bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 ${
+                        index === 0 ? 'rotate-2 w-60 h-48' :
+                        index === 1 ? '-rotate-1 w-56 h-56 col-span-1' :
+                        'rotate-1 w-64 h-40'
                       }`}
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)'
