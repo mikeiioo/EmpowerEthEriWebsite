@@ -8,15 +8,15 @@ const About = () => {
   const faqItems = [
     {
       question: "What is EmpowerEthEri?",
-      answer: "EmpowerEthEri is a mentorship program connecting Eritrean and Ethiopian youth with established professionals for guidance, support, and community building."
+      answer: "EmpowerEthEri is a mentorship program connecting Eritrean and Ethiopian youth with established older peers for guidance, support, and community building."
     },
     {
       question: "Who can join as a mentee?",
-      answer: "Any young person of Eritrean or Ethiopian descent between the ages of 16-25 who is looking for guidance in education, career, or cultural identity."
+      answer: "Any young person of Eritrean or Ethiopian descent in high school who is looking for guidance in education, career, or cultural identity."
     },
     {
       question: "How do I become a mentor?",
-      answer: "Professionals with at least 5 years of experience in their field can apply through our Directory page. All mentors undergo a background check and training."
+      answer: "Please contact our main office through our social media or email."
     },
     {
       question: "Is the program free?",
@@ -24,7 +24,7 @@ const About = () => {
     },
     {
       question: "Where do mentorship sessions take place?",
-      answer: "Mentorship can be conducted virtually or in-person depending on location and preferences of the mentor-mentee pair."
+      answer: "Mentorship can be conducted virtually or in-person depending on location and preferences of the mentor-mentee pair. However there will be many inperson and virtual events with the everyone in the program"
     }
   ];
 
