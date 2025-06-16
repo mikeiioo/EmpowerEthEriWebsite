@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -29,13 +30,11 @@ const About = () => {
     }
   ];
 
-  // Reduced photo collection with 5 images
+  // Reduced photo collection to 3 images for triangular layout
   const photoStackImages = [
     "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop"
   ];
 
   return (
@@ -52,7 +51,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Vision Statement with PhotoStack */}
+        {/* Vision Statement with PhotoGrid */}
         <section className="py-8">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
@@ -66,25 +65,44 @@ const About = () => {
                 </h3>
               </div>
 
-              {/* PhotoGrid - Right Side */}
+              {/* Triangular PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-3 w-[600px]">
-                  {photoStackImages.map((image, index) => (
+                <div className="flex flex-col items-center space-y-4">
+                  {/* Top row - 2 photos */}
+                  <div className="flex space-x-4">
+                    {photoStackImages.slice(0, 2).map((image, index) => (
+                      <div
+                        key={index}
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44"
+                        style={{
+                          boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
+                          zIndex: index % 2 === 0 ? 2 : 1
+                        }}
+                      >
+                        <img
+                          src={image}
+                          alt={`Photo ${index + 1}`}
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  {/* Bottom row - 1 photo centered */}
+                  <div className="flex justify-center">
                     <div
-                      key={index}
                       className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        zIndex: index % 2 === 0 ? 2 : 1
+                        zIndex: 2
                       }}
                     >
                       <img
-                        src={image}
-                        alt={`Photo ${index + 1}`}
+                        src={photoStackImages[2]}
+                        alt="Photo 3"
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,3 +194,4 @@ const About = () => {
 };
 
 export default About;
+
