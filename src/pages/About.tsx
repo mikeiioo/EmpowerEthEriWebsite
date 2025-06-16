@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -58,7 +59,7 @@ const About = () => {
               {/* Vision Statement - Left Side */}
               <div className="text-left mb-12 max-w-md">
                 <div className="rainbow-card rounded-lg p-8">
-                  <h2 className="text-4xl font-bold mb-6 event-blue font-fredoka">
+                  <h2 className="text-4xl font-bold mb-6 text-red-600 font-fredoka">
                     Our Vision
                   </h2>
                   <h3 className="text-3xl font-bold mb-4 event-blue font-fredoka">
