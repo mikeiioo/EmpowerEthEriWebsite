@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -67,7 +68,7 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-3 gap-0 w-[600px]">
+                <div className="grid grid-cols-3 w-[600px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
