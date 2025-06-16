@@ -36,7 +36,11 @@ const About = () => {
     "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=300&h=300&fit=crop"
   ];
 
   return (
@@ -69,7 +73,7 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="relative w-[550px] h-[450px]">
+                <div className="relative w-[600px] h-[500px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
@@ -79,11 +83,15 @@ const About = () => {
                         index === 2 ? 'rotate-1 w-56 h-36 top-8 right-0' :
                         index === 3 ? '-rotate-1 w-44 h-44 bottom-20 left-8' :
                         index === 4 ? 'rotate-2 w-50 h-38 bottom-8 left-40' :
-                        'rotate-1 w-48 h-42 bottom-4 right-8'
+                        index === 5 ? 'rotate-1 w-48 h-42 bottom-4 right-8' :
+                        index === 6 ? '-rotate-3 w-46 h-40 top-4 left-20' :
+                        index === 7 ? 'rotate-2 w-52 h-36 top-16 right-20' :
+                        index === 8 ? '-rotate-1 w-44 h-46 top-24 left-60' :
+                        'rotate-3 w-48 h-40 top-2 right-40'
                       }`}
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        zIndex: 6 - index
+                        zIndex: 10 - index
                       }}
                     >
                       <img
