@@ -29,11 +29,13 @@ const About = () => {
     }
   ];
 
-  // Updated to use correct public folder paths
+  // Updated to include new images and make them bigger
   const photoStackImages = [
     "/lovable-uploads/89518ad1-c573-46d1-ad48-a9356b22120a.png",
     "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
-    "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png"
+    "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png",
+    "/lovable-uploads/f25f31dd-68f9-4442-a825-68e302205a6d.png",
+    "/lovable-uploads/7c89f842-2371-490b-963a-5b0798b34d3d.png"
   ];
 
   return (
@@ -66,13 +68,13 @@ const About = () => {
 
               {/* Triangular PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="flex flex-col items-center space-y-4">
+                <div className="flex flex-col items-center space-y-6">
                   {/* Top row - 2 photos */}
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-6">
                     {photoStackImages.slice(0, 2).map((image, index) => (
                       <div
                         key={index}
-                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-56 h-56"
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
                         style={{
                           boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                           zIndex: index % 2 === 0 ? 2 : 1
@@ -86,18 +88,37 @@ const About = () => {
                       </div>
                     ))}
                   </div>
+                  {/* Middle row - 2 photos */}
+                  <div className="flex space-x-6">
+                    {photoStackImages.slice(2, 4).map((image, index) => (
+                      <div
+                        key={index + 2}
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
+                        style={{
+                          boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
+                          zIndex: index % 2 === 0 ? 2 : 1
+                        }}
+                      >
+                        <img
+                          src={image}
+                          alt={`Photo ${index + 3}`}
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+                      </div>
+                    ))}
+                  </div>
                   {/* Bottom row - 1 photo centered */}
                   <div className="flex justify-center">
                     <div
-                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-56 h-56"
+                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-72 h-72"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                         zIndex: 2
                       }}
                     >
                       <img
-                        src={photoStackImages[2]}
-                        alt="Photo 3"
+                        src={photoStackImages[4]}
+                        alt="Photo 5"
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
