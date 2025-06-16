@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -22,6 +21,56 @@ const Home = () => {
       src: "/lovable-uploads/e8613ed8-d7ba-426e-8931-98304d291dde.png",
       alt: "University of Georgia student celebrating",
       caption: "EmpowerEthEri students succeeding at top universities"
+    },
+    {
+      src: "/lovable-uploads/a9905f61-459e-48d6-bce4-cad36c4c89f4.png",
+      alt: "Student celebrating University of Georgia acceptance",
+      caption: "Celebrating University of Georgia Bulldogs acceptance"
+    },
+    {
+      src: "/lovable-uploads/2c93f941-214b-4452-9a34-6b2af88b309c.png",
+      alt: "Student with University of Georgia shirt",
+      caption: "Proud moments wearing University of Georgia colors"
+    },
+    {
+      src: "/lovable-uploads/dd3a813c-e5e0-4a5d-ae30-fc72418afefc.png",
+      alt: "Student celebrating Augusta University acceptance",
+      caption: "Augusta University student celebrating academic achievements"
+    },
+    {
+      src: "/lovable-uploads/b5df13fe-a6be-44ec-9114-17baeb08ed6a.png",
+      alt: "Student with University of Pennsylvania gear",
+      caption: "University of Pennsylvania student showing school pride"
+    },
+    {
+      src: "/lovable-uploads/0f5a10a6-d500-4b6e-b21f-3bdc71cc859d.png",
+      alt: "Student in University of Georgia shirt",
+      caption: "University of Georgia Bulldogs student representation"
+    },
+    {
+      src: "/lovable-uploads/99bf466a-5102-4d2b-9a10-8559c9aa0d3e.png",
+      alt: "Student celebrating University of Chicago match",
+      caption: "University of Chicago match celebration with thank you sign"
+    },
+    {
+      src: "/lovable-uploads/e3020200-c1fa-4113-8b78-4efe04851b50.png",
+      alt: "Student representing Vanderbilt University",
+      caption: "Vanderbilt University student showing academic achievement"
+    },
+    {
+      src: "/lovable-uploads/55cb16c4-1bbc-463a-a471-232d3a8d8ac2.png",
+      alt: "Student celebrating Emory University acceptance",
+      caption: "Emory University acceptance celebration with school flag"
+    },
+    {
+      src: "/lovable-uploads/63bda0c0-7864-4572-8b1a-e8f899854efb.png",
+      alt: "Student in Georgia Tech gear",
+      caption: "Georgia Tech Yellow Jackets student achievement"
+    },
+    {
+      src: "/lovable-uploads/6828ceea-2cee-49d6-808a-cf9c8f37c86a.png",
+      alt: "Student representing University of Miami",
+      caption: "University of Miami student celebrating academic success"
     }
   ];
 
