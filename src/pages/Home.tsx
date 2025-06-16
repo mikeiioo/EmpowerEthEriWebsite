@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -5,20 +6,20 @@ import ImageCarousel from '../components/ImageCarousel';
 const Home = () => {
   const { t } = useLanguage();
 
-  // Updated carousel images to use the same three images from the About page
+  // Carousel images properly structured for Vite application
   const carouselImages = [
     {
-      src: "/lovable-uploads/89518ad1-c573-46d1-ad48-a9356b22120a.png",
+      src: "/images/photo1.jpg",
       alt: "EmpowerEthEri community gathering",
       caption: "Building connections within our Habesha community"
     },
     {
-      src: "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
+      src: "/images/photo2.jpg",
       alt: "Student academic achievement",
       caption: "Celebrating educational milestones and success"
     },
     {
-      src: "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png",
+      src: "/images/photo3.jpg",
       alt: "Mentor guiding student",
       caption: "One-on-one mentorship making a difference"
     }
