@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -29,15 +28,13 @@ const About = () => {
     }
   ];
 
-  // Reduced photo collection with 7 images
+  // Reduced photo collection with 5 images
   const photoStackImages = [
     "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop"
   ];
 
   return (
@@ -70,7 +67,7 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-3 gap-2 w-[600px]">
+                <div className="grid grid-cols-3 gap-0 w-[600px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
