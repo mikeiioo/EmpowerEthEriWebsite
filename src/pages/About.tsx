@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -28,11 +29,11 @@ const About = () => {
     }
   ];
 
-  // Updated to use local assets
+  // Updated to use correct public folder paths
   const photoStackImages = [
-    "/src/assets/images/photo1.jpg",
-    "/src/assets/images/photo2.jpg",
-    "/src/assets/images/photo3.jpg"
+    "/lovable-uploads/89518ad1-c573-46d1-ad48-a9356b22120a.png",
+    "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
+    "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png"
   ];
 
   return (
