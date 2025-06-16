@@ -73,7 +73,7 @@ const About = () => {
                     {photoStackImages.slice(0, 2).map((image, index) => (
                       <div
                         key={index}
-                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44"
+                        className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-56 h-56"
                         style={{
                           boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                           zIndex: index % 2 === 0 ? 2 : 1
@@ -90,7 +90,7 @@ const About = () => {
                   {/* Bottom row - 1 photo centered */}
                   <div className="flex justify-center">
                     <div
-                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44"
+                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-56 h-56"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
                         zIndex: 2
