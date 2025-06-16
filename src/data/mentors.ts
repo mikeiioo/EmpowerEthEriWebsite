@@ -11,7 +11,7 @@ export const mentors: Mentor[] = [
   {
     id: 1,
     name: "Pheben Getahun",
-    role: "Software Engineer",
+    role: "Political Science, NYU",
     bio: "20+ years experience in software development with expertise in web applications and mentoring junior developers.",
     imageUrl: "/placeholder.svg",
   },
