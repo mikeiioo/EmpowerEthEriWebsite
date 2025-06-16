@@ -10,18 +10,18 @@ const Home = () => {
   const carouselImages = [
     {
       src: "/images/photo1.jpg",
-      alt: "EmpowerEthEri community gathering",
-      caption: "Building connections within our Habesha community"
+      alt: "Student celebrating University of Chicago acceptance",
+      caption: "Celebrating college acceptance and academic achievements"
     },
     {
       src: "/images/photo2.jpg",
-      alt: "Student academic achievement",
-      caption: "Celebrating educational milestones and success"
+      alt: "Student with Emory University acceptance",
+      caption: "Proud moments as students reach their educational goals"
     },
     {
       src: "/images/photo3.jpg",
-      alt: "Mentor guiding student",
-      caption: "One-on-one mentorship making a difference"
+      alt: "University of Georgia student celebrating",
+      caption: "EmpowerEthEri students succeeding at top universities"
     }
   ];
 
