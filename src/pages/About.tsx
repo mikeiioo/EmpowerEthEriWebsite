@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -69,21 +70,20 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-3 gap-0 w-[600px]">
+                <div className="grid grid-cols-3 gap-2 w-[600px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
-                      className="bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44 -ml-3 -mt-3"
+                      className="rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        transform: `rotate(${(index % 3 - 1) * 3}deg)`,
                         zIndex: index % 2 === 0 ? 2 : 1
                       }}
                     >
                       <img
                         src={image}
                         alt={`Photo ${index + 1}`}
-                        className="w-full h-full object-cover rounded"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
                   ))}
