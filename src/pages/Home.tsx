@@ -6,20 +6,20 @@ import ImageCarousel from '../components/ImageCarousel';
 const Home = () => {
   const { t } = useLanguage();
 
-  // Carousel images properly structured for Vite application
+  // Carousel images with direct paths to uploaded images
   const carouselImages = [
     {
-      src: "/images/photo1.jpg",
+      src: "/lovable-uploads/84170efc-7566-46ca-a93b-e1783794d464.png",
       alt: "Student celebrating University of Chicago acceptance",
       caption: "Celebrating college acceptance and academic achievements"
     },
     {
-      src: "/images/photo2.jpg",
+      src: "/lovable-uploads/dcce0fd1-7cfb-47d6-8508-eebc4751417f.png",
       alt: "Student with Emory University acceptance",
       caption: "Proud moments as students reach their educational goals"
     },
     {
-      src: "/images/photo3.jpg",
+      src: "/lovable-uploads/e8613ed8-d7ba-426e-8931-98304d291dde.png",
       alt: "University of Georgia student celebrating",
       caption: "EmpowerEthEri students succeeding at top universities"
     }
