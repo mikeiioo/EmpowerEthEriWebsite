@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -73,25 +72,14 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="relative w-[600px] h-[500px]">
+                <div className="grid grid-cols-4 gap-4 w-[600px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
-                      className={`absolute bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 ${
-                        index === 0 ? 'rotate-3 w-52 h-40 top-0 left-0' :
-                        index === 1 ? '-rotate-2 w-48 h-48 top-12 left-32' :
-                        index === 2 ? 'rotate-1 w-56 h-36 top-8 right-0' :
-                        index === 3 ? '-rotate-1 w-44 h-44 bottom-20 left-8' :
-                        index === 4 ? 'rotate-2 w-50 h-38 bottom-8 left-40' :
-                        index === 5 ? 'rotate-1 w-48 h-42 bottom-4 right-8' :
-                        index === 6 ? '-rotate-3 w-46 h-40 top-4 left-20' :
-                        index === 7 ? 'rotate-2 w-52 h-36 top-16 right-20' :
-                        index === 8 ? '-rotate-1 w-44 h-46 top-24 left-60' :
-                        'rotate-3 w-48 h-40 top-2 right-40'
-                      }`}
+                      className="bg-white p-3 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-32 h-32"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        zIndex: 10 - index
+                        transform: `rotate(${(index % 4 - 2) * 2}deg)`
                       }}
                     >
                       <img
