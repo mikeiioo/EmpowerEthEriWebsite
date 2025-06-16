@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
@@ -9,43 +10,43 @@ const programResources = [
     title: "EmpowerEthEri Mentorship",
     description: "Connect with supportive mentors and find guidance for your college journey!",
     url: "/directory",
-    image: "/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png",
+    image: "/src/assets/images/empoweretheri-program.jpg", // EmpowerEthEri mentorship program promotional image
   },
   {
     title: "Big Brothers Big Sisters Atlanta",
     description: "Mentoring programs for Atlanta youth ages 6–18.",
     url: "https://bbbsatl.org/",
-    image: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
+    image: "/src/assets/images/bbbs-logo.jpg", // Big Brothers Big Sisters organization logo
   },
   {
     title: "Jack and Jill of America",
     description: "Leadership program supporting Black and African American youth.",
     url: "https://www.jackandjillatl.org/",
-    image: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
+    image: "/src/assets/images/jack-and-jill-logo.jpg", // Jack and Jill organization logo
   },
   {
     title: "Upward Bound",
     description: "A federally funded college access program for low income or first-gen students.",
     url: "https://www2.ed.gov/programs/trioupbound/index.html",
-    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
+    image: "/src/assets/images/upward-bound-logo.jpg", // Federal Upward Bound program logo
   },
   {
     title: "100 Black Men of Atlanta",
     description: "Empowering and mentoring Black youth with leadership, scholarship, and community engagement.",
     url: "https://100blackmen-atlanta.org/",
-    image: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png",
+    image: "/src/assets/images/100-black-men-logo.jpg", // 100 Black Men organization logo
   },
   {
     title: "Metro Atlanta YMCA Academic Support",
     description: "After-school academic & mentorship programs for teens and youth.",
     url: "https://ymcaatlanta.org/academic-support/",
-    image: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png",
+    image: "/src/assets/images/ymca-atlanta-logo.jpg", // YMCA Atlanta branch logo
   },
   {
     title: "Community Academic Mentoring",
     description: "Community-based mentoring and tutoring for first-gen and immigrant youth.",
     url: "https://mentor.org/programs-directory/",
-    image: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
+    image: "/src/assets/images/community-mentoring-logo.jpg", // Community mentoring program logo
   },
 ];
 

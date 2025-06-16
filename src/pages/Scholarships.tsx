@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
@@ -9,43 +10,43 @@ const scholarshipResources = [
     title: "United Negro College Fund",
     description: "Multiple scholarships for Black students, including first-gen and students from Africa.",
     url: "https://uncf.org/scholarships",
-    image: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png",
+    image: "/src/assets/images/uncf-logo.jpg", // United Negro College Fund official logo
   },
   {
     title: "The Gates Scholarship",
     description: "Highly competitive, full scholarship for outstanding, minority, high school seniors.",
     url: "https://www.thegatesscholarship.org/",
-    image: "/lovable-uploads/da935b25-d018-4f14-b09e-ccad4fc8b69f.png",
+    image: "/src/assets/images/gates-scholarship-logo.jpg", // Gates Foundation scholarship program logo
   },
   {
     title: "International Student Scholarships at Georgia State University",
     description: "For international and first-gen students, including those from Ethiopia and Eritrea.",
     url: "https://international.gsu.edu/current-students/scholarships/",
-    image: "/lovable-uploads/434f3934-db86-4be1-9504-bbde560c3030.png",
+    image: "/src/assets/images/gsu-logo.jpg", // Georgia State University official logo
   },
   {
     title: "Fastweb Scholarships Database",
     description: "A massive searchable database of scholarships for various backgrounds and interests.",
     url: "https://www.fastweb.com/",
-    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
+    image: "/src/assets/images/fastweb-logo.jpg", // Fastweb scholarship platform logo
   },
   {
     title: "Scholarships.com",
     description: "Find scholarships for African, international, and first-generation students.",
     url: "https://www.scholarships.com/",
-    image: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
+    image: "/src/assets/images/scholarships-com-logo.jpg", // Scholarships.com platform logo
   },
   {
     title: "African American Scholarships - NAACP",
     description: "Curated scholarships for Black and African American students.",
     url: "https://naacp.org/find-resources/scholarships-awards-internships/scholarships",
-    image: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
+    image: "/src/assets/images/naacp-logo.jpg", // NAACP organization official logo
   },
   {
     title: "Bold.org Scholarships",
     description: "Extensive lists for first-gen, Black, African, and STEM students.",
     url: "https://bold.org/scholarships/",
-    image: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
+    image: "/src/assets/images/bold-org-logo.jpg", // Bold.org scholarship platform logo
   },
 ];
 

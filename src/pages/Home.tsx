@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -5,57 +6,58 @@ import ImageCarousel from '../components/ImageCarousel';
 const Home = () => {
   const { t } = useLanguage();
 
-  // Updated carousel images using provided uploads
+  // Updated carousel images using centralized assets folder
+  // Each image represents different aspects of the EmpowerEthEri organization
   const carouselImages = [
     {
-      src: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/src/assets/images/photo1.jpg", // Community meeting or mentorship session
+      alt: "EmpowerEthEri community gathering",
+      caption: "Building connections within our Habesha community"
     },
     {
-      src: "/lovable-uploads/434f3934-db86-4be1-9504-bbde560c3030.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/src/assets/images/photo2.jpg", // Academic success or graduation
+      alt: "Student academic achievement",
+      caption: "Celebrating educational milestones and success"
     },
     {
-      src: "/lovable-uploads/d7638d8b-6b0f-4630-bd45-956c85476903.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/src/assets/images/photo3.jpg", // Mentorship in action
+      alt: "Mentor guiding student",
+      caption: "One-on-one mentorship making a difference"
     },
     {
-      src: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png", // Organization activities
+      alt: "EmpowerEthEri program activities",
+      caption: "Engaging programs supporting youth development"
     },
     {
-      src: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png", // Career guidance
+      alt: "Career development workshop",
+      caption: "Preparing students for future career opportunities"
     },
     {
-      src: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png", // Educational resources
+      alt: "Educational support resources",
+      caption: "Providing comprehensive academic support"
     },
     {
-      src: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png", // Scholarship opportunities
+      alt: "Scholarship and funding opportunities",
+      caption: "Opening doors to higher education funding"
     },
     {
-      src: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png", // Community impact
+      alt: "Community impact and outreach",
+      caption: "Making a lasting impact in our community"
     },
     {
-      src: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png", // Networking events
+      alt: "Professional networking event",
+      caption: "Building professional networks for future success"
     },
     {
-      src: "/lovable-uploads/618ff5d7-b258-496d-809c-1183c8e3918f.png",
-      alt: "ALT TEXT HERE",
-      caption: "CAPTION HERE"
+      src: "/lovable-uploads/618ff5d7-b258-496d-809c-1183c8e3918f.png", // Success stories
+      alt: "Student success stories",
+      caption: "Celebrating the achievements of our mentees"
     },
   ];
 
@@ -82,7 +84,7 @@ const Home = () => {
             <div className="mt-8 flex justify-center">
               <img
                 src="/lovable-uploads/9353e02f-5e51-44e4-b479-8f7b7ccdafb5.png"
-                alt="EmpowerEthEri Logo"
+                alt="EmpowerEthEri Logo - Official organization emblem"
                 className="w-56 h-56 md:w-[18rem] md:h-[18rem] mx-auto rounded-full object-cover shadow-xl animate-slide-fade-in-up"
                 style={{ aspectRatio: 1 }}
               />

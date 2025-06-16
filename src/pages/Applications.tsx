@@ -10,61 +10,61 @@ const applicationResources = [
     title: "Common App",
     description: "Apply to hundreds of colleges with a single application. Widely used for undergraduate admissions in the US.",
     url: "https://www.commonapp.org/",
-    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
+    image: "/src/assets/images/common-app-logo.jpg", // Common Application platform official logo
   },
   {
     title: "Coalition for College",
     description: "Helping students streamline their application process and access support.",
     url: "https://www.coalitionforcollegeaccess.org/",
-    image: "/lovable-uploads/434f3934-db86-4be1-9504-bbde560c3030.png",
+    image: "/src/assets/images/coalition-college-logo.jpg", // Coalition for College platform logo
   },
   {
     title: "Common Black College Application",
     description: "Apply to dozens of HBCUs with one application for one fee.",
     url: "https://commonblackcollegeapp.com/",
-    image: "/lovable-uploads/d7638d8b-6b0f-4630-bd45-956c85476903.png",
+    image: "/src/assets/images/cbca-logo.jpg", // Common Black College Application platform logo
   },
   {
     title: "NACAC College Fairs & Resources",
     description: "Guidance, webinars, and application resources for students, parents and counselors.",
     url: "https://www.nacacattend.org/",
-    image: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
+    image: "/src/assets/images/nacac-logo.jpg", // National Association for College Admission Counseling logo
   },
   {
     title: "InternshipFinder",
     description: "Discover and search for internship opportunities.",
     url: "https://www.internships.com/",
-    image: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
+    image: "/src/assets/images/internship-finder-logo.jpg", // Internships.com platform logo
   },
   {
     title: "Handshake",
     description: "Find jobs and internships for students and new grads.",
     url: "https://joinhandshake.com/",
-    image: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
+    image: "/src/assets/images/handshake-logo.jpg", // Handshake career platform logo
   },
   {
     title: "LinkedIn Jobs",
     description: "Job and internship search tool with networking features.",
     url: "https://www.linkedin.com/jobs/",
-    image: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png",
+    image: "/src/assets/images/linkedin-jobs-logo.jpg", // LinkedIn Jobs platform logo
   },
   {
     title: "Indeed",
     description: "Popular job search engine for all experience levels.",
     url: "https://www.indeed.com/",
-    image: "/lovable-uploads/f6b8403e-46f5-4dc8-aa45-67da8ca97d10.png",
+    image: "/src/assets/images/indeed-logo.jpg", // Indeed job search platform logo
   },
   {
     title: "USAJOBS",
     description: "Federal government jobs and internships.",
     url: "https://www.usajobs.gov/",
-    image: "/lovable-uploads/618ff5d7-b258-496d-809c-1183c8e3918f.png",
+    image: "/src/assets/images/usajobs-logo.jpg", // USAJobs federal employment platform logo
   },
   {
     title: "CareerOneStop",
     description: "Explore careers, education, training, and jobs.",
     url: "https://www.careeronestop.org/",
-    image: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png",
+    image: "/src/assets/images/careeronestop-logo.jpg", // CareerOneStop government resource logo
   },
 ];
 
@@ -72,7 +72,6 @@ const Applications = () => {
   const { t } = useLanguage();
   const [search, setSearch] = useState("");
 
-  // Filter apps by title or description, case-insensitive match
   const filteredResources = useMemo(() => {
     if (!search.trim()) return applicationResources;
     const lower = search.toLowerCase();
@@ -93,7 +92,6 @@ const Applications = () => {
           <p className="mb-8 text-lg text-gray-700">
             Browse our list of resources for college, internship, and job applications.
           </p>
-          {/* Move Back to Resources button above the search bar, make it small */}
           <div className="mb-8 text-left">
             <Link
               to="/resources"
@@ -102,7 +100,6 @@ const Applications = () => {
               &larr; Back to Resources
             </Link>
           </div>
-          {/* Search bar with rounded styling */}
           <div className="mb-8 flex items-center gap-2 max-w-md w-full">
             <div className="relative w-full">
               <Input
@@ -158,7 +155,6 @@ const Applications = () => {
               </a>
             ))}
           </div>
-          {/* Remove the duplicate Back to Resources button from here */}
         </div>
       </div>
     </div>
@@ -166,4 +162,3 @@ const Applications = () => {
 };
 
 export default Applications;
-

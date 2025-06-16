@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
@@ -9,43 +10,43 @@ const academicResources = [
     title: "Khan Academy",
     description: "Free online courses and tutoring in math, science, SAT, and more.",
     url: "https://www.khanacademy.org/",
-    image: "/lovable-uploads/4e68cbd2-22b5-4493-a2f8-0d991144ee9c.png",
+    image: "/src/assets/images/khan-academy-logo.jpg", // Khan Academy brand logo for recognition
   },
   {
     title: "Chegg Study",
     description: "Accessible solutions and expert help for all your coursework needs.",
     url: "https://www.chegg.com/study",
-    image: "/lovable-uploads/7754fcfd-44a8-4205-bd02-8e7c54d39c9e.png",
+    image: "/src/assets/images/chegg-logo.jpg", // Chegg brand logo for platform identification
   },
   {
     title: "Quizlet",
     description: "Create & discover study sets, use flashcards, games, and study plans.",
     url: "https://quizlet.com/",
-    image: "/lovable-uploads/e569157b-0a6e-459f-882e-779d010f636f.png",
+    image: "/src/assets/images/quizlet-logo.jpg", // Quizlet brand logo for study tool recognition
   },
   {
     title: "Atlanta Public Library Tutoring",
     description: "Access free online tutoring and study resources with your library card.",
     url: "https://afpls.org/online-tutoring-research-resources",
-    image: "/lovable-uploads/ab256424-971f-4efc-b462-cd676759e655.png",
+    image: "/src/assets/images/atlanta-library-logo.jpg", // Atlanta library system logo
   },
   {
     title: "Georgia Virtual Learning",
     description: "Free statewide digital resources for Georgia academic support.",
     url: "https://www.georgiastandards.org/Resources/Pages/Tools/Georgia-Virtual-Learning.aspx",
-    image: "/lovable-uploads/d7638d8b-6b0f-4630-bd45-956c85476903.png",
+    image: "/src/assets/images/georgia-education-logo.jpg", // Georgia state education department logo
   },
   {
     title: "Ethiopian and Eritrean Students Union (Sample)",
     description: "Connect with local academic support and peer tutoring groups.",
     url: "https://eesuatlanta.org/",
-    image: "/lovable-uploads/db799310-ba94-49cd-a0fe-93ac07dea3bf.png",
+    image: "/src/assets/images/eesu-logo.jpg", // Ethiopian Eritrean Students Union logo
   },
   {
     title: "EdX Free Courses",
     description: "Access to free and affordable courses from top universities.",
     url: "https://www.edx.org/",
-    image: "/lovable-uploads/fe38124c-0961-431b-b384-a39660448d05.png",
+    image: "/src/assets/images/edx-logo.jpg", // EdX platform logo for online learning
   },
 ];
 
