@@ -8,24 +8,24 @@ const About = () => {
 
   const faqItems = [
     {
-      question: "What is EmpowerEthEri?",
-      answer: "EmpowerEthEri is a mentorship program connecting Eritrean and Ethiopian youth with established older peers for guidance, support, and community building."
+      question: t('faqQuestion1'),
+      answer: t('faqAnswer1')
     },
     {
-      question: "Who can join as a mentee?",
-      answer: "Any young person of Eritrean or Ethiopian descent in high school who is looking for guidance in education, career, or cultural identity."
+      question: t('faqQuestion2'),
+      answer: t('faqAnswer2')
     },
     {
-      question: "How do I become a mentor?",
-      answer: "Please contact our main office through our social media or email."
+      question: t('faqQuestion3'),
+      answer: t('faqAnswer3')
     },
     {
-      question: "Is the program free?",
-      answer: "Yes, all mentorship services are provided free of charge to ensure accessibility for all youth."
+      question: t('faqQuestion4'),
+      answer: t('faqAnswer4')
     },
     {
-      question: "Where do mentorship sessions take place?",
-      answer: "Mentorship can be conducted virtually or in-person depending on location and preferences of the mentor-mentee pair. However there will be many inperson and virtual events with the everyone in the program"
+      question: t('faqQuestion5'),
+      answer: t('faqAnswer5')
     }
   ];
 
@@ -46,7 +46,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="text-left mb-12">
               <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka">
-                About Us
+                {t('aboutUs')}
               </h1>
             </div>
           </div>
@@ -60,10 +60,10 @@ const About = () => {
               <div className="text-left mb-12 max-w-md">
                 <div className="rainbow-card rounded-lg p-8">
                   <h2 className="text-4xl font-bold mb-6 text-red-600 font-fredoka">
-                    Our Vision
+                    {t('ourVision')}
                   </h2>
                   <h3 className="text-3xl font-bold mb-4 event-blue font-fredoka">
-                    EmpowerEthEri hopes to realize a future where every East African high school student in the Metro Atlanta area understands their options for higher education and maximizes their potential.
+                    {t('visionStatement')}
                   </h3>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const About = () => {
                 </h2>
                 <div className="prose prose-lg mx-auto">
                   <p className="mb-4 text-gray-700">
-                    EmpowerEthEri aims to maximize higher education opportunities for East African youth by providing information and resources to ensure their success. Our organization utilizes a free mentorship program created by first-generation East African college students and conducts informational events tailored to support academic growth and achievement. When students are fully equipped to succeed during the college application process, we believe this can then empower kids to fulfill their potential—whatever that may look like.
+                    {t('missionDescription')}
                   </p>
                 </div>
               </div>
@@ -142,27 +142,27 @@ const About = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">College Admissions</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">{t('collegeAdmissions')}</h3>
                   <p className="text-gray-700">
-                    Guidance and support for navigating the college application process and higher education opportunities.
+                    {t('collegeAdmissionsDesc')}
                   </p>
                 </div>
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Scholarship Support</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">{t('scholarshipSupport')}</h3>
                   <p className="text-gray-700">
-                    Assistance in finding and applying for scholarships to make education more accessible and affordable.
+                    {t('scholarshipSupportDesc')}
                   </p>
                 </div>
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Career Guidance</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">{t('careerGuidance')}</h3>
                   <p className="text-gray-700">
-                    Connect youth with professionals in diverse fields to explore career paths and build networks.
+                    {t('careerGuidanceDesc')}
                   </p>
                 </div>
                 <div className="rainbow-card p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 event-blue">Expanding the Habesha network</h3>
+                  <h3 className="text-xl font-semibold mb-3 event-blue">{t('expandingHabeshaNetwork')}</h3>
                   <p className="text-gray-700">
-                    Building connections within the Habesha community to strengthen cultural bonds and professional relationships.
+                    {t('expandingHabeshaNetworkDesc')}
                   </p>
                 </div>
               </div>
@@ -176,7 +176,7 @@ const About = () => {
             <div className="max-w-3xl mx-auto">
               <div className="rainbow-card rounded-lg p-8">
                 <h2 className="text-4xl font-bold mb-10 text-center event-blue">
-                  FAQ
+                  {t('faqTitle')}
                 </h2>
                 <Accordion type="single" collapsible className="w-full">
                   {faqItems.map((item, index) => (

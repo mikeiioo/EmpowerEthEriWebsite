@@ -3,35 +3,35 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { Link } from "react-router-dom";
 
-const resourcesData = [
-  {
-    key: "applications",
-    label: "Applications",
-    description: "Find internship, college, and job application resources.",
-    to: "/resources/applications",
-  },
-  {
-    key: "scholarships",
-    label: "Scholarships",
-    description: "Browse scholarships tailored for Eritrean and Ethiopian youth.",
-    to: "/resources/scholarships",
-  },
-  {
-    key: "academics",
-    label: "Academics",
-    description: "Access study guides, tutoring, and academic support links.",
-    to: "/resources/academics",
-  },
-  {
-    key: "programs",
-    label: "Programs",
-    description: "Discover mentorship and extracurricular programs.",
-    to: "/resources/programs",
-  },
-];
-
 const Resources = () => {
   const { t } = useLanguage();
+
+  const resourcesData = [
+    {
+      key: "applications",
+      label: t('applicationsTitle'),
+      description: t('applicationsDesc'),
+      to: "/resources/applications",
+    },
+    {
+      key: "scholarships",
+      label: t('scholarshipsTitle'),
+      description: t('scholarshipsDesc'),
+      to: "/resources/scholarships",
+    },
+    {
+      key: "academics",
+      label: t('academicsTitle'),
+      description: t('academicsDesc'),
+      to: "/resources/academics",
+    },
+    {
+      key: "programs",
+      label: t('programsTitle'),
+      description: t('programsDesc'),
+      to: "/resources/programs",
+    },
+  ];
 
   return (
     <div className="rainbow-gradient">

@@ -20,7 +20,7 @@ const Directory = () => {
               {t('navDirectory')}
             </h1>
             <p className="text-lg md:text-xl event-blue font-medium font-fredoka">
-              Meet the mentors behind EmpowerEthEri and stay connected!
+              {t('directoryDescription')}
             </p>
           </div>
 

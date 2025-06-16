@@ -69,24 +69,24 @@ const Programs = () => {
       <div className="py-16">
         <div className="container mx-auto px-4 max-w-5xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 event-blue font-fredoka">
-            {t("Programs") || "Programs"}
+            {t("programsTitle")}
           </h1>
           <p className="mb-8 text-lg text-gray-700">
-            Discover mentorship opportunities and extracurricular programs that support youth in your community!
+            {t("programsPageDesc")}
           </p>
           <div className="mb-8 text-left">
             <Link
               to="/resources"
               className="inline-block px-4 py-1.5 rounded-full text-sm bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition mb-6"
             >
-              &larr; Back to Resources
+              {t('backToResources')}
             </Link>
           </div>
           <div className="mb-8 flex items-center gap-2 max-w-md w-full">
             <div className="relative w-full">
               <Input
                 type="text"
-                placeholder="Search programs..."
+                placeholder={t('searchPrograms')}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="pl-10 w-full rounded-full"
@@ -98,7 +98,7 @@ const Programs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {filteredResources.length === 0 && (
               <div className="col-span-full text-center text-gray-500 py-10">
-                No results found.
+                {t('noResults')}
               </div>
             )}
             {filteredResources.map((res) => (
@@ -131,7 +131,7 @@ const Programs = () => {
                     {res.description}
                   </div>
                   <div className="mt-auto inline-flex items-center gap-1 text-sm text-etheri-yellow group-hover:text-yellow-600">
-                    Visit Site <span aria-hidden>↗</span>
+                    {t('visitSite')} <span aria-hidden>↗</span>
                   </div>
                 </div>
               </a>

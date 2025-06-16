@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from '../components/ImageCarousel';
@@ -84,10 +85,10 @@ const Home = () => {
                 letterSpacing: '-0.015em',
               }}
             >
-              <span className="drop-shadow-lg">EmpowerEthEri</span>
+              <span className="drop-shadow-lg">{t('empowerEthEri')}</span>
             </h1>
             <div className="font-bold text-lg md:text-2xl text-gray-700 mb-6">
-              <span>Bringing Academic and Career Empowerment to the Habesha Diaspora</span>
+              <span>{t('homeTagline')}</span>
             </div>
             <div className="mt-8 flex justify-center">
               <img
@@ -105,7 +106,7 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-4xl font-bold mb-8 text-center event-blue">
-                The Impact we have made so far...
+                {t('impactTitle')}
               </h2>
               <ImageCarousel images={carouselImages} />
             </div>
@@ -117,16 +118,16 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <div className="rainbow-card rounded-lg p-8">
-                <h2 className="text-3xl font-bold mb-6 event-blue">Our Mission</h2>
+                <h2 className="text-3xl font-bold mb-6 event-blue">{t('ourMission')}</h2>
                 <p className="text-lg mb-8 text-gray-700">
-                  EmpowerEthEri is a nonprofit mentorship program dedicated to connecting young Eritrean and Ethiopian people within the Metro Atlanta community to mentors who can guide them through college applications, career development, and navigating adulthood.
+                  {t('ourMissionDescription')}
                 </p>
                 <div className="mt-8">
                   <a 
                     href="/about" 
                     className="inline-block px-6 py-3 bg-etheri-blue text-white font-medium rounded-md hover:bg-etheri-lightBlue transition-all"
                   >
-                    Learn More About Us
+                    {t('learnMoreAboutUs')}
                   </a>
                 </div>
               </div>
@@ -140,15 +141,15 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 rounded-lg text-center bg-green-500 text-white shadow-lg">
                 <div className="text-4xl font-bold mb-2">100+</div>
-                <p className="text-white">Youth Mentored</p>
+                <p className="text-white">{t('youthMentored')}</p>
               </div>
               <div className="p-8 rounded-lg text-center bg-red-500 text-white shadow-lg">
                 <div className="text-4xl font-bold mb-2">25+</div>
-                <p className="text-white">Active Mentors</p>
+                <p className="text-white">{t('activeMentors')}</p>
               </div>
               <div className="p-8 rounded-lg text-center bg-blue-500 text-white shadow-lg">
                 <div className="text-4xl font-bold mb-2">20+</div>
-                <p className="text-white">schools across the country</p>
+                <p className="text-white">{t('schoolsAcrossCountry')}</p>
               </div>
             </div>
           </div>
@@ -158,23 +159,22 @@ const Home = () => {
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
             <div className="rainbow-card rounded-lg p-8 max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-6 event-blue">Ready to Get Involved?</h2>
+              <h2 className="text-3xl font-bold mb-6 event-blue">{t('readyToGetInvolved')}</h2>
               <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
-                Whether you're looking for a mentor or want to share your knowledge with the next generation,
-                we have a place for you in our community.
+                {t('readyToGetInvolvedDescription')}
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a 
                   href="/directory" 
                   className="px-6 py-3 bg-etheri-blue text-white font-medium rounded-md hover:bg-etheri-lightBlue transition-all"
                 >
-                  Find a Mentor
+                  {t('findMentor')}
                 </a>
                 <a 
                   href="/directory" 
                   className="px-6 py-3 bg-etheri-yellow text-gray-800 font-medium rounded-md hover:bg-opacity-90 transition-all"
                 >
-                  Become a Mentor
+                  {t('becomeMentor')}
                 </a>
               </div>
             </div>
