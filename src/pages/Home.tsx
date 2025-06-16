@@ -23,11 +23,6 @@ const Home = () => {
       caption: "EmpowerEthEri students succeeding at top universities"
     },
     {
-      src: "/lovable-uploads/a9905f61-459e-48d6-bce4-cad36c4c89f4.png",
-      alt: "Student celebrating University of Georgia acceptance",
-      caption: "Celebrating University of Georgia Bulldogs acceptance"
-    },
-    {
       src: "/lovable-uploads/2c93f941-214b-4452-9a34-6b2af88b309c.png",
       alt: "Student with University of Georgia shirt",
       caption: "Proud moments wearing University of Georgia colors"
