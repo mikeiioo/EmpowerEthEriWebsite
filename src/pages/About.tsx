@@ -28,7 +28,7 @@ const About = () => {
     }
   ];
 
-  // Expanded photo collection with more diverse images
+  // Reduced photo collection with 7 images
   const photoStackImages = [
     "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
@@ -36,10 +36,7 @@ const About = () => {
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=300&h=300&fit=crop"
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop"
   ];
 
   return (
@@ -72,14 +69,14 @@ const About = () => {
 
               {/* PhotoGrid - Right Side */}
               <div className="flex-shrink-0 lg:ml-auto">
-                <div className="grid grid-cols-4 gap-0 w-[550px]">
+                <div className="grid grid-cols-3 gap-0 w-[600px]">
                   {photoStackImages.map((image, index) => (
                     <div
                       key={index}
-                      className="bg-white p-3 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-32 h-32 -ml-2 -mt-2"
+                      className="bg-white p-4 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:z-10 w-44 h-44 -ml-3 -mt-3"
                       style={{
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.15)',
-                        transform: `rotate(${(index % 4 - 2) * 2}deg)`,
+                        transform: `rotate(${(index % 3 - 1) * 3}deg)`,
                         zIndex: index % 2 === 0 ? 2 : 1
                       }}
                     >
