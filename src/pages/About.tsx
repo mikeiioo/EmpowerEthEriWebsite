@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -30,11 +28,11 @@ const About = () => {
     }
   ];
 
-  // Reduced photo collection to 3 images for triangular layout
+  // Updated to use local assets
   const photoStackImages = [
-    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop"
+    "/src/assets/images/photo1.jpg",
+    "/src/assets/images/photo2.jpg",
+    "/src/assets/images/photo3.jpg"
   ];
 
   return (
@@ -194,4 +192,3 @@ const About = () => {
 };
 
 export default About;
-
