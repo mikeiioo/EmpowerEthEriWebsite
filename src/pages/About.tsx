@@ -47,14 +47,14 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="text-left mb-12">
               <h1 className="text-5xl md:text-7xl font-bold mb-4 event-blue font-fredoka">
-                About
+                About Us
               </h1>
             </div>
           </div>
         </section>
 
         {/* Vision Statement with PhotoStack */}
-        <section className="py-16">
+        <section className="py-8">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Vision Statement - Left Side */}
