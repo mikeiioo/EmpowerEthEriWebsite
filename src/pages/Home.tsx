@@ -165,7 +165,9 @@ const Home = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a 
-                  href="/directory" 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd7GNq7jU6aWeovD6wkwWnJ-BgYb2rv9y_y_uvAjRI2Fc14TA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 bg-etheri-blue text-white font-medium rounded-md hover:bg-etheri-lightBlue transition-all"
                 >
                   {t('findMentor')}
