@@ -1,6 +1,6 @@
 # EmpowerEthEri main website 
 
-#Here is the link:
+# Here is the link:
 https://www.empoweretheri.com/
 
 ## Project info
