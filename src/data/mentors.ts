@@ -101,7 +101,7 @@ export const mentors: Mentor[] = [
   {
     id: 15,
     name: "Michael Abraham",
-    role: "Computer Science and Business, Georgia Tech",
+    role: "Computer Science & Business, Georgia Tech",
     bio: "",
     imageUrl: "/lovable-uploads/135c2e59-f380-4a63-86cb-9ad459f0bd6f.png",
   },
@@ -171,7 +171,7 @@ export const mentors: Mentor[] = [
   {
     id: 25,
     name: "Noah Turura",
-    role: "Computer Science and Math, Stanford",
+    role: "Computer Science & Math, Stanford",
     bio: "",
     imageUrl: "/lovable-uploads/a5fa450b-9d5d-4c12-8e79-2f5ae1846db3.png",
   },
