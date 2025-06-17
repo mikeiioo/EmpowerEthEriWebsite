@@ -1,4 +1,3 @@
-
 export type Mentor = {
   id: number;
   name: string;
@@ -13,7 +12,7 @@ export const mentors: Mentor[] = [
     name: "Pheben Getahun",
     role: "Political Science, NYU",
     bio: "20+ years experience in software development with expertise in web applications and mentoring junior developers.",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/491044bd-91c8-4955-95e2-0f79ce5b6b06.png",
   },
   {
     id: 2,
