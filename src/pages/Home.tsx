@@ -10,7 +10,7 @@ const Home = () => {
   const carouselImages = [
     {
       src: "/lovable-uploads/84170efc-7566-46ca-a93b-e1783794d464.png",
-      alt: "Student celebrating University of Chicago acceptance",
+      alt: "",
       caption: "Celebrating college acceptance and academic achievements"
     },
     {

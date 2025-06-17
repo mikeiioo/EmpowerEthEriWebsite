@@ -11,7 +11,7 @@ export const mentors: Mentor[] = [
     id: 1,
     name: "Pheben Getahun",
     role: "Political Science, NYU",
-    bio: "",
+    bio: "NYU, ",
     imageUrl: "/lovable-uploads/6e0ef4c8-94e7-40ef-97ec-de9bf1a75a6c.png",
   },
   {
