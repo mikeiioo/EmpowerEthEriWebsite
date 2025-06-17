@@ -86,8 +86,7 @@ const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: Pro
             </div>
           )}
         </div>
-        <p className="text-sm font-medium text-gray-500 mb-2">{role}</p>
-        <p className="text-gray-700">{bio}</p>
+        <p className="text-sm font-medium text-gray-500">{role}</p>
       </div>
     </div>
   );
