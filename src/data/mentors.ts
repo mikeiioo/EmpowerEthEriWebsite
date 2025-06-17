@@ -110,8 +110,8 @@ export const mentors: Mentor[] = [
   {
     id: 16,
     name: "Josiah Asfaw",
-    role: "Social Worker",
-    bio: "Bio-Chemistry, Vanderbilt University",
+    role: "Bio-Chemistry, Vanderbilt University",
+    bio: "",
     imageUrl: "/lovable-uploads/56446b7e-22d5-4131-8ec7-b36d7075fa35.png",
   },
   {
