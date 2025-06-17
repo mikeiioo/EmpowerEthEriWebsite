@@ -46,7 +46,7 @@ const Home = () => {
     {
       src: "/lovable-uploads/e3020200-c1fa-4113-8b78-4efe04851b50.png",
       alt: "Student representing Vanderbilt University",
-      caption: "Yafet was able to find his "theme" with his application from the help he recieved from his mentor. "
+      caption: "Yafet was able to find his theme with his application from the help he recieved from his mentor. "
     },
     {
       src: "/lovable-uploads/63bda0c0-7864-4572-8b1a-e8f899854efb.png",
