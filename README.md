@@ -1,6 +1,6 @@
 # EmpowerEthEri main website 
 
-# Here is the link: https://www.empoweretheri.com/
+# Link: https://www.empoweretheri.com/
 
 ## Project info
 This is a website dedicated to the upcoming mentorship program coming out of Metro Atlanta Georgia dedicated to uplifting the youth. 
