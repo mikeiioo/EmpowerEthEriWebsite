@@ -38,7 +38,7 @@ export const mentors: Mentor[] = [
   {
     id: 6,
     name: "Orit Endalk",
-    role: "Mental Health Counselor",
+    role: "Electrical Engineering, Georgia Tech",
     bio: "",
     imageUrl: "/lovable-uploads/947450a8-6c60-4c39-a270-7115b89b2e50.png",
   },
@@ -54,7 +54,7 @@ export const mentors: Mentor[] = [
     name: "Syena Yhedogo",
     role: "Arts & Culture Advocate",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/6cb521e3-3313-4479-969e-1c97566dcce5.png",
   },
   {
     id: 9,
@@ -101,16 +101,16 @@ export const mentors: Mentor[] = [
   {
     id: 15,
     name: "Michael Abraham",
-    role: "Academic Advisor",
+    role: "Computer Science and Business, Georgia Tech",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/135c2e59-f380-4a63-86cb-9ad459f0bd6f.png",
   },
   {
     id: 16,
     name: "Josiah Asfaw",
     role: "Social Worker",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/56446b7e-22d5-4131-8ec7-b36d7075fa35.png",
   },
   {
     id: 17,
@@ -171,9 +171,9 @@ export const mentors: Mentor[] = [
   {
     id: 25,
     name: "Noah Turura",
-    role: "Construction Manager",
+    role: "Computer Science and Math, Stanford",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/a5fa450b-9d5d-4c12-8e79-2f5ae1846db3.png",
   },
   {
     id: 26,
