@@ -145,7 +145,7 @@ export const mentors: Mentor[] = [
     name: "Alam Elmana:",
     role: "Data Analyst",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/8148a2f3-89aa-413f-8ba9-194edbb52954.png",
   },
   {
     id: 22,
