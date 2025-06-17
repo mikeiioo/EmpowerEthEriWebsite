@@ -1,5 +1,3 @@
-
-
 export type Mentor = {
   id: number;
   name: string;
@@ -21,7 +19,7 @@ export const mentors: Mentor[] = [
     name: "Hanna Daniel",
     role: "Healthcare Professional",
     bio: "",
-    imageUrl: "/lovable-uploads/d56cc73c-8873-464a-bd31-b68823e0fc75.png",
+    imageUrl: "/lovable-uploads/e50c35d9-3d45-49f2-b752-6f96512c0b30.png",
   },
   {
     id: 4,
@@ -35,14 +33,14 @@ export const mentors: Mentor[] = [
     name: "Afomia Giday",
     role: "Legal Advisor",
     bio: "",
-    imageUrl: "/lovable-uploads/e50c35d9-3d45-49f2-b752-6f96512c0b30.png",
+    imageUrl: "/lovable-uploads/d56cc73c-8873-464a-bd31-b68823e0fc75.png",
   },
   {
     id: 6,
     name: "Orit Endalk",
     role: "Mental Health Counselor",
     bio: "",
-    imageUrl: "/lovable-uploads/9cd7c252-e4c5-4f6d-8c44-4557cff99f67.png",
+    imageUrl: "/lovable-uploads/947450a8-6c60-4c39-a270-7115b89b2e50.png",
   },
   {
     id: 7,
@@ -84,7 +82,7 @@ export const mentors: Mentor[] = [
     name: "Hashim Abdulahi",
     role: "Public Health Expert",
     bio: "",
-    imageUrl: "/lovable-uploads/947450a8-6c60-4c39-a270-7115b89b2e50.png",
+    imageUrl: "/lovable-uploads/9cd7c252-e4c5-4f6d-8c44-4557cff99f67.png",
   },
   {
     id: 13,
@@ -185,4 +183,3 @@ export const mentors: Mentor[] = [
     imageUrl: "/placeholder.svg",
   },
 ];
-
