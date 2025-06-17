@@ -1,3 +1,4 @@
+
 export type Mentor = {
   id: number;
   name: string;
@@ -18,13 +19,6 @@ export const mentors: Mentor[] = [
     id: 2,
     name: "Hanna Daniel",
     role: "Healthcare Professional",
-    bio: "",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: 3,
-    name: "Liya Dawit,",
-    role: "Education Specialist",
     bio: "",
     imageUrl: "/placeholder.svg",
   },
