@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="bg-etheri-blue text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-start">
             <h3 className="text-xl font-bold mb-4">EmpowerEthEri</h3>
             <p className="text-sm mb-4">
@@ -47,27 +47,6 @@ const Footer = () => {
               <li>
                 <Link to="/directory" className="text-sm hover:text-etheri-yellow transition-colors">
                   {t('navDirectory')}
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold mb-4">Resources</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/resources" className="text-sm hover:text-etheri-yellow transition-colors">
-                  {t('navResources')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/important-links" className="text-sm hover:text-etheri-yellow transition-colors">
-                  Important Links
-                </Link>
-              </li>
-              <li>
-                <Link to="/scholarship-newsletter" className="text-sm hover:text-etheri-yellow transition-colors">
-                  Scholarship Newsletter
                 </Link>
               </li>
             </ul>
