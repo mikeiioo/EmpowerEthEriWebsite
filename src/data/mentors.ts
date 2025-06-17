@@ -68,14 +68,14 @@ export const mentors: Mentor[] = [
     name: "Bethania Solomon",
     role: "Community Organizer",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/ecfe4eb7-2f06-4c2e-aa09-e1ab3b8a3f54.png",
   },
   {
     id: 11,
     name: "Birdie Berie",
     role: "Technology Specialist",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/8e3e2439-6a6b-4a53-ac79-c43636428bb6.png",
   },
   {
     id: 12,
@@ -124,7 +124,7 @@ export const mentors: Mentor[] = [
     name: "Beamlak Dagim",
     role: "Medical Professional",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/f574f832-40bc-4a5d-abc8-f6cee42636ed.png",
   },
   {
     id: 19,
@@ -159,7 +159,7 @@ export const mentors: Mentor[] = [
     name: "Emnet Tesfaye",
     role: "Policy Analyst",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/67e3d2c1-e993-4e08-af7a-1520414fc45c.png",
   },
   {
     id: 24,
