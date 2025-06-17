@@ -1,3 +1,4 @@
+
 export type Mentor = {
   id: number;
   name: string;
@@ -26,7 +27,7 @@ export const mentors: Mentor[] = [
     name: "Nathan Eyasu",
     role: "Business Consultant",
     bio: "",
-    imageUrl: "/lovable-uploads/15af436a-4fc6-4b2a-8218-c05bbb93b86f.png",
+    imageUrl: "/lovable-uploads/5cc8ab14-6ec6-4686-a6ac-5668ca62ad28.png",
   },
   {
     id: 5,
@@ -47,7 +48,7 @@ export const mentors: Mentor[] = [
     name: "Laila Kevorkian",
     role: "Financial Advisor",
     bio: "",
-    imageUrl: "/lovable-uploads/0d72ad1e-a581-40a1-b1e0-a39318eabbd5.png",
+    imageUrl: "/placeholder.svg",
   },
   {
     id: 8,
@@ -61,7 +62,7 @@ export const mentors: Mentor[] = [
     name: "Selam Haile",
     role: "STEM Researcher",
     bio: "",
-    imageUrl: "/lovable-uploads/221c843a-7a72-41ea-9988-7a866cf9d126.png",
+    imageUrl: "/placeholder.svg",
   },
   {
     id: 10,
@@ -75,7 +76,7 @@ export const mentors: Mentor[] = [
     name: "Birdie Berie",
     role: "Technology Specialist",
     bio: "",
-    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+    imageUrl: "/placeholder.svg",
   },
   {
     id: 12,
@@ -96,7 +97,7 @@ export const mentors: Mentor[] = [
     name: "Helen Ejugu",
     role: "Communications Specialist",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/0d72ad1e-a581-40a1-b1e0-a39318eabbd5.png",
   },
   {
     id: 15,
@@ -152,7 +153,7 @@ export const mentors: Mentor[] = [
     name: "Kibur Bezabih",
     role: "Marketing Professional",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/221c843a-7a72-41ea-9988-7a866cf9d126.png",
   },
   {
     id: 23,
@@ -180,6 +181,6 @@ export const mentors: Mentor[] = [
     name: "Marakie Y",
     role: "Language Interpreter",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
   },
 ];
