@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -29,13 +28,13 @@ const About = () => {
     }
   ];
 
-  // Updated to include new images and make them bigger
+  // Updated to replace the bottom right image with the new graduation photo
   const photoStackImages = [
     "/lovable-uploads/89518ad1-c573-46d1-ad48-a9356b22120a.png",
     "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
     "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png",
     "/lovable-uploads/f25f31dd-68f9-4442-a825-68e302205a6d.png",
-    "/lovable-uploads/7c89f842-2371-490b-963a-5b0798b34d3d.png"
+    "/lovable-uploads/0b896cc9-9884-4ca9-9f6a-7e706434b40a.png"
   ];
 
   return (
