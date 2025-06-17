@@ -1,4 +1,5 @@
 
+
 export type Mentor = {
   id: number;
   name: string;
@@ -20,70 +21,70 @@ export const mentors: Mentor[] = [
     name: "Hanna Daniel",
     role: "Healthcare Professional",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/d56cc73c-8873-464a-bd31-b68823e0fc75.png",
   },
   {
     id: 4,
     name: "Nathan Eyasu",
     role: "Business Consultant",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/15af436a-4fc6-4b2a-8218-c05bbb93b86f.png",
   },
   {
     id: 5,
     name: "Afomia Giday",
     role: "Legal Advisor",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/e50c35d9-3d45-49f2-b752-6f96512c0b30.png",
   },
   {
     id: 6,
     name: "Orit Endalk",
     role: "Mental Health Counselor",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/9cd7c252-e4c5-4f6d-8c44-4557cff99f67.png",
   },
   {
     id: 7,
     name: "Laila Kevorkian",
     role: "Financial Advisor",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/0d72ad1e-a581-40a1-b1e0-a39318eabbd5.png",
   },
   {
     id: 8,
     name: "Syena Yhedogo",
     role: "Arts & Culture Advocate",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/809b91f3-8cd4-4e43-bdd7-69a589541751.png",
   },
   {
     id: 9,
     name: "Selam Haile",
     role: "STEM Researcher",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/221c843a-7a72-41ea-9988-7a866cf9d126.png",
   },
   {
     id: 10,
     name: "Bethania Solomon",
     role: "Community Organizer",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/ea493bb8-b941-4d54-a66e-e0777261bb87.png",
   },
   {
     id: 11,
     name: "Birdie Berie",
     role: "Technology Specialist",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
   },
   {
     id: 12,
     name: "Hashim Abdulahi",
     role: "Public Health Expert",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/947450a8-6c60-4c39-a270-7115b89b2e50.png",
   },
   {
     id: 13,
@@ -184,3 +185,4 @@ export const mentors: Mentor[] = [
     imageUrl: "/placeholder.svg",
   },
 ];
+
