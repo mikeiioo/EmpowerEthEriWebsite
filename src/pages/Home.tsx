@@ -11,7 +11,7 @@ const Home = () => {
     {
       src: "/lovable-uploads/84170efc-7566-46ca-a93b-e1783794d464.png",
       alt: "Questbridge",
-      caption: "Celebrating college acceptance and academic achievements"
+      caption: "Ruth had all of the nessescary componenets for a great application, it was with the help she recieved that she could piece it together."
     },
     {
       src: "/lovable-uploads/dcce0fd1-7cfb-47d6-8508-eebc4751417f.png",
@@ -56,7 +56,7 @@ const Home = () => {
     {
       src: "/lovable-uploads/6828ceea-2cee-49d6-808a-cf9c8f37c86a.png",
       alt: "Student representing University of Miami",
-      caption: "Abel was accepted to the University of Miami with a FULL-RIDE scholarship, through the support he recieved."
+      caption: "Yabsira was accepted to the University of Miami with a FULL-RIDE scholarship, through the support he recieved."
     }
   ];
 
