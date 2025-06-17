@@ -70,10 +70,14 @@ const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: Pro
             </div>
           )}
         </div>
-        <p className="text-sm font-medium text-gray-500">{role}</p>
+        <p className="text-sm font-medium text-gray-500 mb-2">{role}</p>
+        {bio && (
+          <p className="text-sm text-gray-600">{bio}</p>
+        )}
       </div>
     </div>
   );
 };
 
 export default ProfileCard;
+

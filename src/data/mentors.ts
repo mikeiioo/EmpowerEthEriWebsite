@@ -1,4 +1,5 @@
 
+
 export type Mentor = {
   id: number;
   name: string;
@@ -95,8 +96,8 @@ export const mentors: Mentor[] = [
   {
     id: 14,
     name: "Helen Ejugu",
-    role: "Neuorscience & Behaviroal Biology & Human Health",
-    bio: "Emory University",
+    role: "Neuroscience & Behavioral Biology & Human Health, Emory University",
+    bio: "Helen is pursuing her studies at Emory University, focusing on the intersection of neuroscience, behavioral biology, and human health.",
     imageUrl: "/lovable-uploads/0d72ad1e-a581-40a1-b1e0-a39318eabbd5.png",
   },
   {
@@ -184,3 +185,4 @@ export const mentors: Mentor[] = [
     imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
   },
 ];
+
