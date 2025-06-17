@@ -170,13 +170,13 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-etheri-blue text-white font-medium rounded-md hover:bg-etheri-lightBlue transition-all"
                 >
-                  {t('findMentor')}
+                  Become a Mentee
                 </a>
                 <a 
                   href="/directory" 
                   className="px-6 py-3 bg-etheri-yellow text-gray-800 font-medium rounded-md hover:bg-opacity-90 transition-all"
                 >
-                  {t('becomeMentor')}
+                  Find a Mentor
                 </a>
               </div>
             </div>
