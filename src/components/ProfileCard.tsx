@@ -1,7 +1,6 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Linkedin, Instagram, Mail } from 'lucide-react';
-import ImageProcessor from './ImageProcessor';
 
 type ProfileCardProps = {
   name: string;
@@ -12,14 +11,11 @@ type ProfileCardProps = {
 };
 
 const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: ProfileCardProps) => {
-  const [processedImageUrl, setProcessedImageUrl] = useState<string | null>(null);
-  
   // Detect which contact this is for special styling
   const n = name.toLowerCase();
   const isInstagram = n === "instagram";
   const isLinkedIn = n === "linkedin";
   const isFacebook = n === "facebook";
-  const isPhebenGetahun = name === "Pheben Getahun";
 
   let imageClass =
     "w-full md:w-40 h-40 rounded-md object-contain bg-gray-50";
@@ -33,25 +29,13 @@ const ProfileCard = ({ name, role, bio, imageUrl, showSocialIcons = false }: Pro
   } else if (isFacebook) {
     // Show as circle for Facebook (matches its round logo)
     imageClass = "w-24 h-24 md:w-28 md:h-28 rounded-full object-cover bg-white";
-  } else if (isPhebenGetahun) {
-    // Special styling for Pheben with processed image
-    imageClass = "w-full md:w-40 h-40 rounded-md object-cover bg-transparent";
   }
-
-  const displayImageUrl = isPhebenGetahun && processedImageUrl ? processedImageUrl : imageUrl;
 
   return (
     <div className="flex flex-col md:flex-row gap-6 p-6 rounded-lg bg-white shadow-sm border border-gray-200 transition-all hover:shadow-md">
-      {isPhebenGetahun && (
-        <ImageProcessor
-          originalImageUrl={imageUrl}
-          onProcessedImage={setProcessedImageUrl}
-        />
-      )}
-      
       <div className="flex-shrink-0 flex items-center justify-center">
         <img
-          src={displayImageUrl}
+          src={imageUrl}
           alt={name}
           className={imageClass}
           style={inlineStyle}
