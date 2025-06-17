@@ -89,7 +89,7 @@ export const mentors: Mentor[] = [
     name: "Abi Elias",
     role: "Engineering Mentor",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/ae721dad-80d6-4fbe-a266-da4f31efe03f.png",
   },
   {
     id: 14,
@@ -117,7 +117,7 @@ export const mentors: Mentor[] = [
     name: "Samuel Woldegiorgis",
     role: "Entrepreneur",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/878a7680-ce6d-496b-9e2c-511be0bd494d.png",
   },
   {
     id: 18,
@@ -166,7 +166,7 @@ export const mentors: Mentor[] = [
     name: "Hanan Fuad",
     role: "Graphic Designer",
     bio: "",
-    imageUrl: "/placeholder.svg",
+    imageUrl: "/lovable-uploads/ee8b80fc-667d-40f3-8eb1-aa7d97ec2128.png",
   },
   {
     id: 25,
