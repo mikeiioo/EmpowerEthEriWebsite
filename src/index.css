@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 210 79.2% 33.7%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 39 88% 58%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 70.6% 45.3%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 79.2% 33.7%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 39 88% 58%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 70.6% 45.3%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Light blue background similar to the image */
+.rainbow-gradient {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Wavy graphic in bottom right corner */
+.rainbow-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 300px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cpath d='M0,300 Q100,200 200,250 T400,200 L400,300 Z' fill='%2366bb6a' fill-opacity='0.7'/%3E%3Cpath d='M0,300 Q150,180 300,220 T400,180 L400,300 Z' fill='%23ffc107' fill-opacity='0.8'/%3E%3Cpath d='M0,300 Q200,160 350,200 T400,160 L400,300 Z' fill='%23f44336' fill-opacity='0.7'/%3E%3C/svg%3E") no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scattered graphics - stars and rainbow trails */
+.rainbow-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    /* Blue star - top left area */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L60 35 L85 35 L66 52 L76 77 L50 60 L24 77 L34 52 L15 35 L40 35 Z' fill='%235dade2' fill-opacity='0.6'/%3E%3C/svg%3E"),
+    /* Yellow star - top right area */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M40 8 L48 28 L68 28 L53 41 L61 61 L40 48 L19 61 L27 41 L12 28 L32 28 Z' fill='%23f1c40f' fill-opacity='0.7'/%3E%3C/svg%3E"),
+    /* Rainbow trail 1 - left side */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 80'%3E%3Cpath d='M10 70 Q50 30 90 50 Q120 60 140 40' stroke='%23e74c3c' stroke-width='8' fill='none' opacity='0.6'/%3E%3Cpath d='M10 70 Q50 30 90 50 Q120 60 140 40' stroke='%23f39c12' stroke-width='6' fill='none' opacity='0.7' transform='translate(0,-3)'/%3E%3Cpath d='M10 70 Q50 30 90 50 Q120 60 140 40' stroke='%2327ae60' stroke-width='4' fill='none' opacity='0.6' transform='translate(0,-6)'/%3E%3C/svg%3E"),
+    /* Rainbow trail 2 - center */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Cpath d='M20 50 Q60 20 100 35' stroke='%2327ae60' stroke-width='6' fill='none' opacity='0.6'/%3E%3Cpath d='M20 50 Q60 20 100 35' stroke='%23f1c40f' stroke-width='4' fill='none' opacity='0.7' transform='translate(0,-2)'/%3E%3Cpath d='M20 50 Q60 20 100 35' stroke='%23e74c3c' stroke-width='2' fill='none' opacity='0.6' transform='translate(0,-4)'/%3E%3C/svg%3E"),
+    /* Small blue star - middle left */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath d='M30 6 L36 21 L51 21 L40 31 L46 46 L30 36 L14 46 L20 31 L9 21 L24 21 Z' fill='%235dade2' fill-opacity='0.5'/%3E%3C/svg%3E"),
+    /* Small yellow star - bottom left */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath d='M25 5 L30 18 L43 18 L33 26 L38 39 L25 31 L12 39 L17 26 L7 18 L20 18 Z' fill='%23f1c40f' fill-opacity='0.6'/%3E%3C/svg%3E");
+  background-position: 
+    15% 20%,     /* Blue star - top left */
+    85% 15%,     /* Yellow star - top right */
+    5% 60%,      /* Rainbow trail 1 - left side */
+    60% 45%,     /* Rainbow trail 2 - center */
+    25% 50%,     /* Small blue star - middle left */
+    20% 80%;     /* Small yellow star - bottom left */
+  background-size: 
+    80px 80px,   /* Blue star */
+    60px 60px,   /* Yellow star */
+    120px 60px,  /* Rainbow trail 1 */
+    100px 50px,  /* Rainbow trail 2 */
+    40px 40px,   /* Small blue star */
+    35px 35px;   /* Small yellow star */
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content appears above the wavy graphic */
+.rainbow-gradient > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Blue gradient for headers */
+.gradient-blue {
+  @apply bg-gradient-to-r from-etheri-blue to-etheri-lightBlue text-white;
+}
+
+/* Event-style blue text */
+.event-blue {
+  color: #2c5aa0;
+}
+
+.profile-card {
+  @apply flex flex-col md:flex-row gap-6 p-6 rounded-lg border bg-white/80 backdrop-blur-sm shadow-sm transition-all hover:shadow-md;
+}
+
+.profile-image {
+  @apply w-full md:w-40 h-40 rounded-md object-cover;
+}
+
+.switch-tab {
+  @apply px-4 py-2 rounded-full font-medium transition-all;
+}
+
+.switch-tab.active {
+  @apply bg-etheri-blue text-white;
+}
+
+.switch-tab.inactive {
+  @apply bg-white/80 text-gray-600 hover:bg-white/90;
+}
+
+/* Card styling for rainbow background */
+.rainbow-card {
+  @apply bg-white/90 backdrop-blur-sm border border-white/20 shadow-lg;
+}
