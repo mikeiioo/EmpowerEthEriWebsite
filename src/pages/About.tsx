@@ -34,7 +34,7 @@ const About = () => {
     "/lovable-uploads/69f79bd1-810a-4751-bccf-f5522a706cee.png",
     "/lovable-uploads/30ed17ba-64b0-4487-8ad2-51223a7eb08c.png",
     "/lovable-uploads/f25f31dd-68f9-4442-a825-68e302205a6d.png",
-    "/lovable-uploads/0b896cc9-9884-4ca9-9f6a-7e706434b40a.png"
+    "/images/BrookwoodGrad.png"
   ];
 
   return (

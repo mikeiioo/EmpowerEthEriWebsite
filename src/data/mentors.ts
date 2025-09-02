@@ -39,20 +39,13 @@ export const mentors: Mentor[] = [
   },
   {
     id: 6,
-    name: "Orit Endalk",
-    role: "Electrical Engineering, Georgia Tech",
-    bio: "",
-    imageUrl: "/lovable-uploads/947450a8-6c60-4c39-a270-7115b89b2e50.png",
-  },
-  {
-    id: 7,
     name: "Laila Kevorkian",
     role: "International Studies & Public Policy, Spellman College",
     bio: "",
     imageUrl: "/lovable-uploads/ea493bb8-b941-4d54-a66e-e0777261bb87.png",
   },
   {
-    id: 8,
+    id: 7,
     name: "Syena Yhedogo",
     role: "Public Health, University of Georgia",
     bio: "",
@@ -184,5 +177,41 @@ export const mentors: Mentor[] = [
     bio: "",
     imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
   },
+  {
+    id: 27,
+    name: "Ephrata Genet",
+    role: "Computational Biology, Columbia University",
+    bio: "",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+  },
+  {
+    id: 28,
+    name: "Temi Thomas",
+    role: "CS & Economics, NYU",
+    bio: "",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+  },
+  {
+    id: 29,
+    name: "Dagmawi Jote",
+    role: "Genetics & Biology, University of Georgia",
+    bio: "",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+  },
+  {
+    id: 30,
+    name: "Elom Eskender",
+    role: "CS & Economics, Cornell",
+    bio: "",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+  },
+  {
+    id: 30,
+    name: "Nia Yussuf",
+    role: "Mechanical Engineering, Georgia Tech",
+    bio: "",
+    imageUrl: "/lovable-uploads/c6ea8ee5-29c5-4369-aba8-f0beca6fd7ef.png",
+  },
+  
 ];
 
