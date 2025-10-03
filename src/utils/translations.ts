@@ -6,6 +6,7 @@ type TranslationKey =
   | 'navAbout'
   | 'navDirectory'
   | 'navResources'
+  | 'navEvents'
   | 'tagline'
   | 'aboutFounder'
   | 'missionStatement'
@@ -86,7 +87,7 @@ const translations = {
     navHome: 'Home',
     navAbout: 'About',
     navDirectory: 'Directory',
-    navResources: 'Resources',
+    navEvents: "Events",
     tagline: 'Bridging the gap one youth at a time',
     aboutFounder: 'Our Founder',
     missionStatement: 'Mission Statement',

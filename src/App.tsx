@@ -10,6 +10,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Directory from "./pages/Directory";
+import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
 
 
@@ -27,6 +28,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/directory" element={<Directory />} />
+              <Route path="*" element={<Events />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

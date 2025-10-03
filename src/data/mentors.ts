@@ -182,35 +182,35 @@ export const mentors: Mentor[] = [
     name: "Ephrata Genet",
     role: "Computational Biology, Columbia University",
     bio: "",
-    imageUrl: null,
+    imageUrl: "/images/Ephrata.jpg",
   },
   {
     id: 26,
     name: "Temi Thomas",
     role: "CS & Economics, NYU",
     bio: "",
-    imageUrl:null,
+    imageUrl: "/images/EmpowerEthEriLogo.png",
   },
   {
     id: 27,
     name: "Dagmawi Jote",
     role: "Genetics & Biology, University of Georgia",
     bio: "",
-    imageUrl: null,
+    imageUrl: "/images/Dagmawi.jpg",
   },
   {
     id: 28,
     name: "Elom Eskender",
     role: "CS & Economics, Cornell",
     bio: "",
-    imageUrl: null,
+    imageUrl: "/images/Elom.jpg",
   },
   {
     id: 29,
     name: "Nia Yussuf",
     role: "Mechanical Engineering, Georgia Tech",
     bio: "",
-    imageUrl: null
+    imageUrl: "/images/Nia.jpg"
   },
   
 ];
